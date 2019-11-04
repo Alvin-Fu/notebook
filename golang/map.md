@@ -62,6 +62,9 @@ type bmap struct {
 
 ## 2、创建一个map
 就是初始化一个map
+```
+
+```
 
 
 ## 3、map中的操作
