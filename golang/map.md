@@ -111,6 +111,10 @@ func makemap(t *maptype, hint int, h *hmap) *hmap {
 4. 如果bmap中没有机会去overflow指向的下一个去查找，直到找到或者没有找到
 注意tophash的作用就是快速的比较，当前面的几位都不匹配是就可以快速的去后面查找了
 ### 3.2、Put操作
+put操作基本就是get操作的逆操作
+1. 对key计算出相应的hash值
+2. 通过后八位找到bmap
+3. 通过前八位找到
 
 ### 3.3、Delete操作
 
