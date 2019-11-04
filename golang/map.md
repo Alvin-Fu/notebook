@@ -103,7 +103,7 @@ func makemap(t *maptype, hint int, h *hmap) *hmap {
 ## 3、map中的操作
 ### 3.1、Get操作
 从map中获取一个元素，需要对key进行去hash然后在去找到那个元素，因此go中也是类似的
-![Snipaste_20191104_174152.png](0)
+![get.png](0)
 从图中可以看到，
 1. 根据hash值的前8位定位桶中的格子
 2. hash的后B位是定位在那个bucket中
@@ -114,7 +114,10 @@ func makemap(t *maptype, hint int, h *hmap) *hmap {
 put操作基本就是get操作的逆操作
 1. 对key计算出相应的hash值
 2. 通过后八位找到bmap
-3. 通过前八位找到
+3. 通过前八位找到key是否存在，如果不存在判断bmap中是否有空位，如果没有就进行溢出桶，使用overflow指向，将key和value放到新的bmap中，在放置key的时候是放在第一个出现空位
+![put.png](1)
+bmap中的空格是由于删除操作造成的，
+
 
 ### 3.3、Delete操作
 
