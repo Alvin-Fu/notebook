@@ -61,6 +61,7 @@ type bmap struct {
 注意golang中的map在扩容的过程中，还是一个链表，是以buckets的形式进行扩容的
 
 ## 2、创建一个map
+就是初始化一个map
 
 
 ## 3、map中的操作
