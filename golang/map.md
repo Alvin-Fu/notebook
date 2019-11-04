@@ -63,7 +63,39 @@ type bmap struct {
 ## 2、创建一个map
 就是初始化一个map
 ```
+func makemap(t *maptype, hint int, h *hmap) *hmap {
+	if hint < 0 || hint > int(maxSliceCap(t.bucket.size)) {
+		hint = 0
+	}
 
+	// initialize Hmap
+	if h == nil {
+		h = new(hmap)
+	}
+	h.hash0 = fastrand()
+
+	// find size parameter which will hold the requested # of elements
+	B := uint8(0)
+	// 确定初始化的时候buckets的大小
+	for overLoadFactor(hint, B) {
+		B++
+	}
+	h.B = B
+	// allocate initial hash table
+	// if B == 0, the buckets field is allocated lazily later (in mapassign)
+	// If hint is large zeroing this memory could take a while.
+	if h.B != 0 {
+		var nextOverflow *bmap
+		// 给buckets分配内存
+		h.buckets, nextOverflow = makeBucketArray(t, h.B, nil)
+		if nextOverflow != nil {
+			h.extra = new(mapextra)
+			h.extra.nextOverflow = nextOverflow
+		}
+	}
+
+	return h
+}
 
 ```
 
