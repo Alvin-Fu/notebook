@@ -102,7 +102,11 @@ func makemap(t *maptype, hint int, h *hmap) *hmap {
 
 ## 3、map中的操作
 ### 3.1、Get操作
+从map中获取一个元素，需要对key进行去hash然后在去找到那个元素，因此go中也是类似的
+![Snipaste_20191104_174152.png](0)
+从图中可以看到，根据hash值的前8位定位桶中的格子，hash的后B位是定位在那个bucket中
 ### 3.2、Put操作
+### 3.3、Delete操作
 
 
 
