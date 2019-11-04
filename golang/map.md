@@ -109,7 +109,9 @@ func makemap(t *maptype, hint int, h *hmap) *hmap {
 2. hash的后B位是定位在那个bucket中
 3. 使用整个hash值判断key是否存在
 4. 如果bmap中没有机会去overflow指向的下一个去查找，直到找到或者没有找到
+注意tophash的作用就是快速的比较，当前面的几位都不匹配是就可以快速的去后面查找了
 ### 3.2、Put操作
+
 ### 3.3、Delete操作
 
 
