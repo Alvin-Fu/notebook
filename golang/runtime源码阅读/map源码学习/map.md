@@ -137,7 +137,9 @@ delete的操作和put的操作基本一致，只是delete是将key和value删除
 	2. 有了太多的溢出桶 （桶数量不变的情况下，进行横向扩展）
 	3. 当前不是正在扩容
 有三个方法是用于map的扩容的
-	1. hashGrow这个方法主要是进行
+	1. hashGrow这个方法主要是进行桶数组的分配和将oldbuckets赋值，extra赋值等
+	2. growWork是用于数据的移动
+	3. evacuate是实际的数据移动的处理
 
 
 	
