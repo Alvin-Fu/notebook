@@ -1,5 +1,6 @@
 # golang源码阅读之map
 [go1.11版map源码的位置](https://github.com/Alvin-Fu/readgolangcode/blob/master/map.go)
+[golang中的操作符](https://github.com/Alvin-Fu/notebook/blob/master/golang/operator/operator.md)
 
 ## 1、map的结构
 ```
