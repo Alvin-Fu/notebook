@@ -1,4 +1,5 @@
 # golang源码阅读之map
+[go1.11版map源码的位置](https://github.com/Alvin-Fu/readgolangcode/blob/master/map.go)
 
 ## 1、map的结构
 ```
@@ -100,7 +101,7 @@ func makemap(t *maptype, hint int, h *hmap) *hmap {
 ```
 
 
-## 3、map中的操作
+## 3、map中对外提供的操作
 ### 3.1、Get操作
 从map中获取一个元素，需要对key进行去hash然后在去找到那个元素，因此go中也是类似的
 ![title](../.local/static/2019/10/2/Snipaste_2019-11-04_17-41-52.1572928201136.png)
@@ -126,6 +127,8 @@ bmap中的空格是由于删除操作造成的
 
 ### 3.3、Delete操作
 delete的操作和put的操作基本一致，只是delete是将key和value删除
+
+## 4、map中扩容
 
 
 
