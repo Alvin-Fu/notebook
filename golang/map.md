@@ -119,7 +119,7 @@ put操作基本就是get操作的逆操作
 1. 对key计算出相应的hash值
 2. 通过后八位找到bmap
 3. 通过前八位找到key是否存在，如果不存在判断bmap中是否有空位，如果没有就进行溢出桶，使用overflow指向，将key和value放到新的bmap中，在放置key的时候是放在第一个出现空位的地方
-![put.png](1)
+todo add:![put.png](1)
 bmap中的空格是由于删除操作造成的
 代码：
 ```
