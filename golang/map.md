@@ -122,8 +122,7 @@ put操作基本就是get操作的逆操作
 3. 通过前八位找到key是否存在，如果不存在判断bmap中是否有空位，如果没有就进行溢出桶，使用overflow指向，将key和value放到新的bmap中，在放置key的时候是放在第一个出现空位的地方
 ![title](../.local/static/2019/10/2/Snipaste_2019-11-04_20-14-40.1572928207232.png)
 bmap中的空格是由于删除操作造成的
-代码：
-[map的put代码 mapassign方法](https://github.com/Alvin-Fu/readgolangcode/blob/master/map.go)
+
 
 ### 3.3、Delete操作
 delete的操作和put的操作基本一致，只是delete是将key和value删除
@@ -131,8 +130,12 @@ delete的操作和put的操作基本一致，只是delete是将key和value删除
 ## 4、map的迭代
 
 ## 5、map中扩容
+扩容就是在报持桶不变的情况下使得map横向发展
 扩容的条件：
-	1. 超过了
+	1. 超过了负载因子
+	2. 有了太多的溢出桶
+	3. 当前不是正在扩容
+	
 
 
 
