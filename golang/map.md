@@ -51,7 +51,7 @@ type bmap struct {
 }
 
 ```
-
+![title](../.local/static/2019/10/2/Snipaste_2019-11-04_15-58-33.1572928191038.png)
 
 结构中 
 	1. buckets是一个数组， 每一个后面会有一个bmap的链表，其中每一个bmap中最对只能保存
@@ -103,7 +103,7 @@ func makemap(t *maptype, hint int, h *hmap) *hmap {
 ## 3、map中的操作
 ### 3.1、Get操作
 从map中获取一个元素，需要对key进行去hash然后在去找到那个元素，因此go中也是类似的
-
+![title](../.local/static/2019/10/2/Snipaste_2019-11-04_17-41-52.1572928201136.png)
 从图中可以看到，
 1. 根据hash值的前8位定位桶中的格子
 2. hash的后B位是定位在那个bucket中
@@ -119,7 +119,7 @@ put操作基本就是get操作的逆操作
 1. 对key计算出相应的hash值
 2. 通过后八位找到bmap
 3. 通过前八位找到key是否存在，如果不存在判断bmap中是否有空位，如果没有就进行溢出桶，使用overflow指向，将key和value放到新的bmap中，在放置key的时候是放在第一个出现空位的地方
-
+![title](../.local/static/2019/10/2/Snipaste_2019-11-04_20-14-40.1572928207232.png)
 bmap中的空格是由于删除操作造成的
 代码：
 ```
