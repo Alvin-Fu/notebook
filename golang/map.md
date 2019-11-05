@@ -124,9 +124,8 @@ bmap中的空格是由于删除操作造成的
 代码：
 [map的put代码 mapassign方法](https://github.com/Alvin-Fu/readgolangcode/blob/master/map.go)
 
-
-
 ### 3.3、Delete操作
+
 
 
 
