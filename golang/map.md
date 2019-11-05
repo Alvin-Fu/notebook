@@ -123,7 +123,114 @@ put操作基本就是get操作的逆操作
 bmap中的空格是由于删除操作造成的
 代码：
 ```
+func mapassign(mapType *maptype, h *hmap, key unsafe.Pointer) unsafe.Pointer {
+	...
+	if h.flags&hashWriting != 0 {
+		throw("concurrent map writes")
+	}
+	alg := mapType.key.alg
+	// 获取key的hash值
+	hash := alg.hash(key, uintptr(h.hash0))
 
+	// Set hashWriting after calling alg.hash, since alg.hash may panic,
+	// in which case we have not actually done a write.
+	// 设置标志位，表示当前的map正在写，不是并发安全的存在的意义在哪里
+	h.flags |= hashWriting
+	// 当buckets为nil是重新分配
+	if h.buckets == nil {
+		h.buckets = newobject(mapType.bucket) // newarray(mapType.bucket, 1)
+	}
+
+again:
+	bucket := hash & bucketMask(h.B) // 取到key所对应的桶的位置
+	if h.growing() {                 // 判断map是否正在增长
+		growWork(mapType, h, bucket)
+	}
+	// b表示的是这个key应该存的那个bmap
+	currentBMap := (*bmap)(unsafe.Pointer(uintptr(h.buckets) + bucket*uintptr(mapType.bucketsize)))
+	// 获取hash的前八位
+	top := tophash(hash)
+
+	var inserti *uint8         // 用于保存tophash中的值，即桶中的格子
+	var insertk unsafe.Pointer // 可以放key
+	var val unsafe.Pointer	   // 可以放value
+	for {
+		for i := uintptr(0); i < bucketCnt; i++ {
+			if currentBMap.tophash[i] != top {
+				//Todo：这个判断是用来做什么？
+				if currentBMap.tophash[i] == empty && inserti == nil {
+					inserti = &currentBMap.tophash[i]
+					insertk = add(unsafe.Pointer(currentBMap), dataOffset+i*uintptr(mapType.keysize))
+					val = add(unsafe.Pointer(currentBMap), dataOffset+bucketCnt*uintptr(mapType.keysize)+i*uintptr(mapType.valuesize))
+				}
+				continue
+			}
+			k := add(unsafe.Pointer(currentBMap), dataOffset+i*uintptr(mapType.keysize))
+			if mapType.indirectkey {
+				k = *((*unsafe.Pointer)(k))
+			}
+			if !alg.equal(key, k) {
+				continue
+			}
+			// already have a mapping for key. Update it.
+			// 对应的key中有值时就更新这个值
+			if mapType.needkeyupdate {
+				typedmemmove(mapType.key, k, key)
+			}
+			val = add(unsafe.Pointer(currentBMap), dataOffset+bucketCnt*uintptr(mapType.keysize)+i*uintptr(mapType.valuesize))
+			goto done
+		}
+		// 当前的bmap中如果没有了溢出桶时就跳出循环，则表示在bmap中没有空位
+		ovf := currentBMap.overflow(mapType)
+		if ovf == nil {
+			break
+		}
+		currentBMap = ovf
+	}
+
+	// Did not find mapping for key. Allocate new cell & add entry.
+
+	// If we hit the max load factor or we have too many overflow buckets,
+	// and we're not already in the middle of growing, start growing.
+	// 判断当前的map没有扩容过并且负载因子过大或者有太多的的溢出桶，进行map增长
+	if !h.growing() && (overLoadFactor(h.count+1, h.B) || tooManyOverflowBuckets(h.noverflow, h.B)) {
+		hashGrow(mapType, h)
+		// map增长后再次尝试存放key和value
+		goto again // Growing the table invalidates everything, so try again
+	}
+	//表示所有的
+	if inserti == nil {
+		// all current buckets are full, allocate a new one.
+		newb := h.newoverflow(mapType, currentBMap)
+		inserti = &newb.tophash[0]
+		insertk = add(unsafe.Pointer(newb), dataOffset)
+		val = add(insertk, bucketCnt*uintptr(mapType.keysize))
+	}
+
+	// store new key/value at insert position
+	if mapType.indirectkey {
+		kmem := newobject(mapType.key)
+		*(*unsafe.Pointer)(insertk) = kmem
+		insertk = kmem
+	}
+	if mapType.indirectvalue {
+		vmem := newobject(mapType.elem)
+		*(*unsafe.Pointer)(val) = vmem
+	}
+	typedmemmove(mapType.key, insertk, key)
+	*inserti = top
+	h.count++
+
+done:
+	if h.flags&hashWriting == 0 {
+		throw("concurrent map writes")
+	}
+	h.flags &^= hashWriting
+	if mapType.indirectvalue {
+		val = *((*unsafe.Pointer)(val))
+	}
+	return val
+}
 ```
 
 
