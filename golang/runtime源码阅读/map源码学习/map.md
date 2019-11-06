@@ -151,7 +151,7 @@ delete的操作和put的操作基本一致，只是delete是将key和value删除
 	3. evacuate是实际的数据移动的处理
 
 在使用map的过程中需要注意float类型，每次取得的hash值是不一样的，因此只有遍历的时候才能取到这个key。
-在扩容的时候也是需要
+在扩容的时候也是需要进行处理，当进行二倍扩容的时候，将使用tophash的最低位决定这个key-value被放在xDet或yDet中，并通过
 
 
 
