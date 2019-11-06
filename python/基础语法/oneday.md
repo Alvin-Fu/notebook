@@ -7,4 +7,8 @@ python中的变量不需要进行声明，可以直接进行使用，变量在�
 python的6个标准数据类型：
 	1. Number 数字
 	2. String 字符串
-	3. List
+	3. Tuple 元组
+	4. List 列表
+	5. Sets  集合
+	6. Dictionary 字典
+	其中前三个是不变的，后三个是可变的
