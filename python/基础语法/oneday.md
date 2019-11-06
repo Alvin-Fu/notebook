@@ -1,1 +1,3 @@
 python学firstday
+# python的变量和数据结构
+python中的变量不需要进行声明，可以直接进行使用，变量在使用的时候必须进行赋值
