@@ -1,0 +1,34 @@
+InnoDB和myisam两种存储引擎的区别
+# 一、二者之间的区别
+是否支持事务： InnoDB支持， Myisam不支持
+索引类型： InnoDB聚集索引， Myisam非聚集索引
+是否支持外键： InnoDB支持， Myisam不支持
+锁的最小粒度： InnoDB是行锁， Myisam是表锁（一个更新语句会锁住整个表，严重影响性能，并发受限制）
+InnoDB中不保存表中数据的行数，Myisam会保存表中数据的行数
+
+存储结构：
+	InnoDB：
+	Myisam：
+存储空间：
+可移植性、备份和恢复：
+全文索引：
+表主键：
+
+# 二、二者使用的场景
+## 2.1 InnoDB的使用场景
+需要支持事务的场景
+读写比较复杂的场景
+不能接受系统崩溃后数据的恢复问题
+不知道怎么选是就选InnoDB
+## 2.2 Myisam的使用场景
+表中绝大多数都是只读场景
+
+# 三、InnoDB的聚集
+
+
+
+
+
+
+参考内容：
+[InnoDB和Myisam的区别](https://www.zhihu.com/question/20596402)
