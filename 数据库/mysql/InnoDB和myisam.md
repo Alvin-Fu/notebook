@@ -10,6 +10,8 @@ InnoDB中不保存表中数据的行数，Myisam会保存表中数据的行数
 	InnoDB：
 	Myisam：
 存储空间：
+	InnoDB：
+	Myisam:
 可移植性、备份和恢复：
 全文索引：
 表主键：
