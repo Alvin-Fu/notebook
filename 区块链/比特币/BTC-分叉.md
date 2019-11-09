@@ -27,6 +27,11 @@ forking sttack分叉攻击，这是恶意攻击（deliberate fork）
 
 BTC历史上的软分叉的例子：P2SH: pay to script hash
 	在支付的时候不是付给一个pubilc key的hash而是一个赎回脚本的hash（redeem script）
+	验证分为两步：
+		1. 验证输入脚本中的redeem script和输出脚本的redeem script的hash是对的上的
+		2. 执行redeem script验证输入脚本给出的这些签名是正确的
+	对于旧节点不理解P2SH的特性只会验证第一阶段，纠
+
 
 
 
