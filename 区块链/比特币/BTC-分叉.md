@@ -25,3 +25,7 @@ forking sttack分叉攻击，这是恶意攻击（deliberate fork）
 实际中出现的软分叉的例子：
 给没有定义的域赋予新的属性
 
+
+
+merkle proof用于证明某个交易是否在一个给定的区块里，
+
