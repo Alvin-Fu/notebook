@@ -23,7 +23,10 @@ forking sttack分叉攻击，这是恶意攻击（deliberate fork）
 ### 软分叉（soft fork）
 临时性的分叉
 实际中出现的软分叉的例子：
-给没有定义的域赋予新的属性，比如coinbase域的使用， 将UTXO组成一个merkle tree 
+给没有定义的域赋予新的属性，比如coinbase域的使用， 将UTXO组成一个merkle tree，由于coinbase的值会影响根hash
+
+BTC历史上的软分叉的例子：P2SH: pay to script hash
+	在支付的时候不是给一个，而是给
 
 
 
