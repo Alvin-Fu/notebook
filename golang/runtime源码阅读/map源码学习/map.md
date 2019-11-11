@@ -159,7 +159,8 @@ delete的操作和put的操作基本一致，只是delete是将key和value删除
 
 
 
-
+参考：
+[大话map](https://www.linkinstar.wiki/2019/06/03/golang/source-code/graphic-golang-map/)
 
 
 
