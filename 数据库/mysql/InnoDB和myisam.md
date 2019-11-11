@@ -16,8 +16,8 @@ InnoDB中不保存表中数据的行数，Myisam会保存表中数据的行数
 	Mysiam: 由于数据都以文件的形式，因此在跨平台和单表的迁移非常好
 	InnoDB: 免费的方案可以是拷贝数据文件、备份 binlog，或者用 mysqldump，在数据量达到几十G的时候就相对痛苦了
 全文索引：
-	Mysiam:
-	InnoDB:
+	Mysiam: 支持FULLText类型的索引，这个在搜索很长的文章是效果很好，在用于较短的时候效果不是很好
+	InnoDB: 不支持FullText类型索引，使用
 表主键：
 
 # 二、二者使用的场景
