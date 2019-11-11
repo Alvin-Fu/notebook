@@ -160,7 +160,11 @@ delete的操作和put的操作基本一致，只是delete是将key和value删除
 
 
 	
-
+```seq
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
 
 
 
