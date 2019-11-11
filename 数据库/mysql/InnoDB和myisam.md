@@ -69,5 +69,6 @@ InnoDB中不保存表中数据的行数，Myisam会保存表中数据的行数
 
 
 
+
 参考内容：
 [InnoDB和Myisam的区别](https://www.zhihu.com/question/20596402)
