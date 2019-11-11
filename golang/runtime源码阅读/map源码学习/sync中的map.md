@@ -5,7 +5,7 @@ type Map struct {
 	// 这个read是原子操作的，因此是并发安全的
 	read atomic.Value // readOnly， 这部分内容是并发安全的，无论是否持有锁
 	dirty map[interface{}]*entry
-	misses int
+	misses int			// 用于记录read和dirty之间的关系
 }
 
 ```
