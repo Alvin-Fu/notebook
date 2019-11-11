@@ -9,4 +9,4 @@ type Map struct {
 }
 
 ```
-在代码
+在代码有很多都是在前面对read
