@@ -142,7 +142,9 @@ flags := h.flags &^ (iterator | oldIterator)
 if h.flags&iterator != 0 {
 	flags |= oldIterator
 }
-这两块的代码是有关联的，前者的代码是
+这两块的代码是有关联的，前者的代码是为了标记当前的迭代器的状态，是否有处于久桶上的迭代器
+下面的代码是将所有当前桶的迭代器放到久桶中
+原因是map的在扩容时的获取
 ```
 
 
