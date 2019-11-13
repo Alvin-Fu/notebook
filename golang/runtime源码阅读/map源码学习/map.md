@@ -132,6 +132,12 @@ bmap中的空格是由于删除操作造成的
 delete的操作和put的操作基本一致，只是delete是将key和value删除
 
 ## 4、map的迭代
+```
+f
+if old := h.flags; old&(iterator|oldIterator) != iterator|oldIterator {
+	atomic.Or8(&h.flags, iterator|oldIterator)
+}
+```
 
 
 ## 5、map中扩容
