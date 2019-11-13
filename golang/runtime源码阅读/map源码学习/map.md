@@ -133,10 +133,16 @@ delete的操作和put的操作基本一致，只是delete是将key和value删除
 
 ## 4、map的迭代
 ```
-f
+函数mapiterinit中的代码
 if old := h.flags; old&(iterator|oldIterator) != iterator|oldIterator {
 	atomic.Or8(&h.flags, iterator|oldIterator)
 }
+函数hashGrow中的代码
+flags := h.flags &^ (iterator | oldIterator)
+if h.flags&iterator != 0 {
+	flags |= oldIterator
+}
+这两块的代码是有关联的，前者的代码是
 ```
 
 
