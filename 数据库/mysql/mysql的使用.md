@@ -27,6 +27,7 @@ join表时应该注意的地方，join字段应该是建立了索引的，并且
 [mysql的性能优化](https://www.cnblogs.com/pengyunjing/p/6591660.html )
 [关于主键的作用](https://ruby-china.org/topics/26352)
 [阿里分库分表](https://mp.weixin.qq.com/s/YpirU0zbZfKNxDSQSTNaxQ)
+[mysql性能优化必备技能](https://mp.weixin.qq.com/s/UkQ31grdLZJttlNAPFs9cg)
 
 
 
