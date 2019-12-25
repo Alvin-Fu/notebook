@@ -9,10 +9,12 @@ IOPS(Input/Output Per Second)即每秒的输入输出量(即读写次数)，系�
 吞吐量主要取决于磁盘阵列的架构，通道的大小和磁盘的个数
 
 操作系统操作硬盘的模型图
+通常情况下15000rpm磁盘计算出来的理论最大的IOPS为166，在实际的使用中会超过这个限制因为操作系统会进行调优，不是所有的磁盘操作都是直接到物理设备层的，还有一些缓存等
 	- 虚拟文件系统层(VFS Layer)
 	- 具体的文件系统层(Ext2等)
 	- Cache层(Page Cache Later)
 	- 通用块层(Generic Block Layer)
 	- I/O调度层(I/O Scheduler Layer)
-	- 块设备驱动层(Block Device Drive)
+	- 块设备驱动层(Block Device Driver Layer)
+	- 物理块设备层(Block Device Layer)
 ![title](../../.local/static/2019/11/3/Snipaste_2019-12-25_20-14-10.1577276132564.png)
