@@ -19,7 +19,7 @@ IOPS(Input/Output Per Second)即每秒的输入输出量(即读写次数)，系�
 	- 物理块设备层(Block Device Layer)
 ![title](../../.local/static/2019/11/3/Snipaste_2019-12-25_20-14-10.1577276132564.png)
 ### 虚拟文件系统层
-VFS(Virtual File System)，虚拟文件系统是系统中的文件管理员()
+VFS(Virtual File System)，虚拟文件系统是系统中的文件管理员(一种软件机制)。 主要的作用就是屏蔽对具体文件系统操作的差异，提供统一的接口(个人认为：和适配器一样，对下层可能有多种不同的体系，对于上层只需要调用接口就好了，不需要理解下层具体做了什么，怎么做的)
 ### Ext2文件系统层
 
 ### Cache层
