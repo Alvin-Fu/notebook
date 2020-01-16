@@ -5,3 +5,5 @@
 首先使用git log查看commit的id
 git reset --hard id回滚到指定的版本
 git checkout -- 文件名 将指定的文件回滚到前一个版本
+
+### git中的submodule
