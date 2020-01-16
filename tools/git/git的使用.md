@@ -14,3 +14,9 @@ git checkout -- 文件名 将指定的文件回滚到前一个版本
 	4. rm .git/module/*  `删除module目录中的子模块对应的目录，不要删除别的哟`
 在做完上面的4个步骤后,可能会出现的问题：
 在使用git submodule的命令时会出现
+```
+$ git submodule
+fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alvin-Fu/testmod'
+在出现这个问题的时候，在找了很久为什么
+```
+
