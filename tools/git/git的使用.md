@@ -19,5 +19,5 @@ $ git submodule
 fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alvin-Fu/testmod'
 出现这个很有可能是因为git中的修改没有提交，在提交以后就会消失
 ```
-如果分支是干净的就不会
+如果分支是干净的就不会出现这种问题
 
