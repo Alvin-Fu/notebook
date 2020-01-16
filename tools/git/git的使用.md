@@ -7,4 +7,6 @@ git reset --hard id回滚到指定的版本
 git checkout -- 文件名 将指定的文件回滚到前一个版本
 
 ### git中的submodule的使用
-在删除
+在删除子模块的时候应该注意的地方
+	1. rm -rf 子模块目录  `删除子模块的目录及源码`
+	2. vim .gitmodules `删除`
