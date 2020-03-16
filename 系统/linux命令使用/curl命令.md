@@ -18,5 +18,8 @@ curl -X PUT 'HTTP的地址' -d '参数'   // 通过curl向http服务发送put请
 `curl -o /dev/null -s -w %{http_code} localhost:5000`
 会返回相应的状态码，
 
+## 4、指定proxy服务器以及端口
+设置代理通过-x
+`curl -x 127.0.0.1:80 http://www.linux.com`
 
 [curl命令详解](https://www.cnblogs.com/duhuo/p/5695256.html)
