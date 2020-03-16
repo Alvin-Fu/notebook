@@ -15,4 +15,4 @@ curl -o #1_#2.text 'http://www.test.com/{hello,bb}/test[1-5].txt'
 这样可以使得hello/test1.txt变成hello_test1.txt
 
 
-
+[curl命令详解](https://www.cnblogs.com/duhuo/p/5695256.html)
