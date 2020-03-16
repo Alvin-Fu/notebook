@@ -11,4 +11,8 @@ curl -O 'http://www.test.com/test.txt'   这样就可以将文件下载到本地
 curl -O 'http://www.test.com/test[1-5].txt'
 
 ### 2.3 下载重名
-curl -o #1_#2.text 'http://www.test.com/test[1-5].txt'
+curl -o #1_#2.text 'http://www.test.com/{hello,bb}/test[1-5].txt'
+这样可以使得hello/test1.txt变成hello_test1.txt
+
+
+
