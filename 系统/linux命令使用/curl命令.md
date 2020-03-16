@@ -14,5 +14,8 @@ curl -O 'http://www.test.com/test[1-5].txt'
 curl -o #1_#2.text 'http://www.test.com/{hello,bb}/test[1-5].txt'
 这样可以使得hello/test1.txt变成hello_test1.txt
 
+## 3、测试网页返回值
+
+
 
 [curl命令详解](https://www.cnblogs.com/duhuo/p/5695256.html)
