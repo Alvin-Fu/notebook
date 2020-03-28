@@ -1,4 +1,4 @@
 go中的常用知识点
 ### 1、go中如何安全的访问共享变量
 	- 互斥锁
-	- channel用于goroutine之间
+	- channel用于goroutine之间，这个也符合go的使用通信去共享，而不是通过共享而
