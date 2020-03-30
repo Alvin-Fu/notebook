@@ -9,3 +9,7 @@ go中的常用知识点
 
 ### 3、go语言的并发机制和使用CSP并发模型
 
+
+
+[面试](https://www.cnblogs.com/wpgraceii/p/10528183.html)
+
