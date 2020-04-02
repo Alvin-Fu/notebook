@@ -73,7 +73,7 @@ func main(){
 	fmt.Println(data2)
 }
 ```
-
+[演示](https://play.golang.org/p/AzpiWvM8937)
 
 
 
