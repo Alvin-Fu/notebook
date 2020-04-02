@@ -46,7 +46,8 @@ func main(){
 	wg.Wait()
 }
 ```
-
+[演示](https://play.golang.org/p/RY_1ChRH7zs)
+会出现死锁的现象，因为传入的wg只是拷贝的副本， 使用指针传递就不会出现了，还可以不传人，由于go中
 
 #### 使用context实现并发控制
 
