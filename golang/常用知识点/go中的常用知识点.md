@@ -59,6 +59,26 @@ func Write(zoo []Animal) {
 [演示](https://play.golang.org/p/nj4M9PsxXC0)
 从上面的结果中可以看出来，range中取出的a只是一个临时变量，改变他的值是不会影响到slice中的值，使用下标是可以改变的
 由于range取出来的是一个临时变量，因此在使用地址的时候也是需要注意的
+```
+type ID struct {
+	id int
+}
+
+func main(){
+	id1 := ID{1}
+	id2 := ID{2}
+	ids1 := []ID{id1, id2}
+	ids2 := []*ID{}
+	for _, id := range ids1{
+		ids2 = append(ids2, &id)
+	}
+	for _, id := range ids2{
+		fmt.Println((*id).id)
+	}
+}
+```
+[演示](https://play.golang.org/p/jGGMrAM7Yb2)
+
 
 
 [面试](https://www.cnblogs.com/wpgraceii/p/10528183.html)
