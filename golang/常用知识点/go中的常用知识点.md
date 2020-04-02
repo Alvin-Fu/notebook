@@ -31,6 +31,12 @@ P(Processer): G和M的中间调度，数量可以由GOMAXPROCS()来设置，默�
 
 
 #### 使用sync的WaitGroup实现的并发模型
+需要注意的是避免出现死锁
+如：
+```
+
+```
+
 #### 使用context实现并发控制
 
 
