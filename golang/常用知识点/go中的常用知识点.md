@@ -20,8 +20,11 @@ goroutine的特性：
 
 
 
+### 4、go中常用的并发模型
 
-### 4、range和iteration的关系
+
+
+### 20、range和iteration的关系
 ```
 // 对range的测试, 在range的使用过程中需要注意range是将当前的值copy了一份，因此在改的时候需要注意
 // 如果需要在range中修改需要使用下标
