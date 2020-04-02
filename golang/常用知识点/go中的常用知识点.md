@@ -18,7 +18,8 @@ goroutine的特性：
 go内部的三个对象： P(processer)代表上下文，也可以理解为cpu，M工作线程， G表示对象(gotoutine)
 G：代表goroutine
 M(Machine)：对内核线程的封装，对应真实的CPU数，真正干活的
-P(Processer): G和M的中间调度
+P(Processer): G和M的中间调度，数量可以由GOMAXPROCS()来设置，默认为核心数
+
 
 
 
