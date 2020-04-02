@@ -34,8 +34,19 @@ P(Processer): G和M的中间调度，数量可以由GOMAXPROCS()来设置，默�
 需要注意的是避免出现死锁
 如：
 ```
-
+func main(){
+	wg := sync.WaitGroup{}
+	for i := 0; i < 1; i++{
+		wg.Add(1)
+		go func(wg sync.WaitGroup, i int) {
+			fmt.Println(i)
+			wg.Done()
+		}(wg, i)
+	}
+	wg.Wait()
+}
 ```
+
 
 #### 使用context实现并发控制
 
