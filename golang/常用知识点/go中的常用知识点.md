@@ -15,7 +15,10 @@ goroutine是go中实际执行并发的实体，它的底层是通过协程实现
 - 可以由语言和框架层进行调度
 - 更小的栈空间允许创建更多的实例
 goroutine的特性：
-GPM模型
+go内部的三个对象： P(processer)代表上下文，也可以理解为cpu，M工作线程， G表示对象(gotoutine)
+G：代表goroutine
+M(Machine)：对内核线程的封装，对应真实的CPU数，
+
 
 
 
