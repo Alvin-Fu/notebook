@@ -56,7 +56,7 @@ func Write(zoo []Animal) {
 	fmt.Printf("%v ✅\n", zoo)
 }
 ```
-
+[演示](https://play.golang.org/p/nj4M9PsxXC0)
 
 
 
