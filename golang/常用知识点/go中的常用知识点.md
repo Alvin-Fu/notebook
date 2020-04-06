@@ -133,7 +133,7 @@ func main(){
 
 ### 10、什么是channel，为什么channel是并发安全的？
 channel是go中的通道，用于传递信息，也可以将其当作一个先进先出的队列
-由于channel是原子性的，所以是并发安全的，go中设计
+由于channel是原子性的，所以是并发安全的，go中设计channel就是为了再多任务中传递数据
 
 
 
