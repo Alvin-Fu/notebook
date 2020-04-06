@@ -140,6 +140,7 @@ channel是go中的通道，用于传递信息，也可以将其当作一个先�
 
 
 
+
 ### 20、range和iteration的关系
 ```
 // 对range的测试, 在range的使用过程中需要注意range是将当前的值copy了一份，因此在改的时候需要注意
