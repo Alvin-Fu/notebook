@@ -137,7 +137,7 @@ channel是go中的通道，用于传递信息，也可以将其当作一个先�
 channel的实现再代码中也是通过锁
 
 ### 11、Epoll原理
-在linux网络编程中必备的epoll，epoll是一种多路IO复用技术，可以高效的处理数以百万计得socket
+在linux网络编程中必备的epoll，epoll是一种多路IO复用技术，可以高效的处理数以百万计得socket句柄，比起socket/poll高效
 
 
 
