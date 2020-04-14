@@ -139,7 +139,7 @@ channel的实现再代码中也是通过锁
 ### 11、Epoll原理
 在linux网络编程中必备的epoll，epoll是一种多路IO复用技术，可以高效的处理数以百万计得socket句柄，比起socket/poll高效很多
 #### 为什么需要epoll
-首先要想到得是epoll得前辈，select和poll，再原理上面select和poll基本是一致得，只是poll
+首先要想到得是epoll得前辈，select和poll，再原理上面select和poll基本是一致得，只是poll取消了最大
 
 
 
