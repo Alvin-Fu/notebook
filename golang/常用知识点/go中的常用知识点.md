@@ -142,7 +142,7 @@ channel的实现再代码中也是通过锁
 首先要想到得是epoll得前辈，select和poll，再原理上面select和poll基本是一致得，只是poll取消了最大监控文件描述符书得限制
 通常得使用中如果有十万并发连接，但是在每一毫秒只有几百个活跃得连接，这样使用select要找到活跃得连接就需要调用整个select函数
 在内核中select是采用轮询得方式，因此每次调用select都要遍历所有得FD_SET中的句柄，因此select函数执行时间和FD_SET中的句柄是成正比的，因此select要检测的句柄数越多越耗时间
-由于select和poll的
+由于select和poll在高并发时的相对低效，使得在linux
 
 
 
