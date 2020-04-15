@@ -143,7 +143,8 @@ channel的实现再代码中也是通过锁
 由于select和poll在高并发时的相对低效，使得在linux2.6以后出现了epoll运用多路IO复用技术
 
 #### epoll高效的奥秘
-
+epoll中有使用三个函数来实现select的功能：
+- 
 
 
 
