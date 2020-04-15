@@ -147,7 +147,7 @@ epoll中有使用三个函数来实现select的功能：
 ```
 int epoll_create(int size) //创建一个epoll对象
 int epoll_ctr(int epfd, int op, int fd, struct epoll_event *event)
-int 
+int epoll_wait(int epfd, struct epoll_event *eve)
 
 ```
 
