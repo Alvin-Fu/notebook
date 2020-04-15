@@ -144,7 +144,8 @@ channel的实现再代码中也是通过锁
 
 #### epoll高效的奥秘
 epoll中有使用三个函数来实现select的功能：
-```- int epoll_create(int size)
+```
+int epoll_create(int size)
 
 ```
 
