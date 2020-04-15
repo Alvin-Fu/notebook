@@ -145,7 +145,7 @@ channel的实现再代码中也是通过锁
 #### epoll高效的奥秘
 epoll中有使用三个函数来实现select的功能：
 ```
-int epoll_create(int size); //创建一个epoll对象,size是代表内核可以处理的最大句柄数，超过
+int epoll_create(int size); //创建一个epoll对象,size是代表内核可以处理的最大句柄数，超过后内核不做保证
 int epoll_ctr(int epfd, int op, int fd, struct epoll_event *event);
 int epoll_wait(int epfd, struct epoll_event *event, int maxevents, int timeout);
 ```
