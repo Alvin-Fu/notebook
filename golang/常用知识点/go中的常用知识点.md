@@ -24,8 +24,6 @@ P(Processer): G和M的中间调度，数量可以由GOMAXPROCS()来设置，默�
 
 
 
-
-
 ### 4、go中常用的并发模型
 #### 使用Channel实现的并发模型
 
