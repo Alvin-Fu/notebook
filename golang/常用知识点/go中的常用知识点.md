@@ -146,7 +146,7 @@ channel的实现再代码中也是通过锁
 epoll中有使用三个函数来实现select的功能：
 ```
 int epoll_create(int size); //创建一个epoll对象,size是代表内核可以处理的最大句柄数，超过后内核不保证效果
-int epoll_ctr(int epfd, int op, int fd, struct epoll_event *event);//对epoll进行操作，可以将新建立的socket加入epoll中也可以将
+int epoll_ctr(int epfd, int op, int fd, struct epoll_event *event);//对epoll进行操作，可以将新建立的socket加入epoll中也可以将旧的socket移出epoll，不再对其进行
 int epoll_wait(int epfd, struct epoll_event *event, int maxevents, int timeout);
 ```
 
