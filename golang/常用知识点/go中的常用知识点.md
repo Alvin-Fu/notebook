@@ -146,8 +146,23 @@ channel的实现再代码中也是通过锁
 epoll中有使用三个函数来实现select的功能：
 ```
 int epoll_create(int size); //创建一个epoll对象,size是代表内核可以处理的最大句柄数，超过后内核不保证效果
+
+
 int epoll_ctr(int epfd, int op, int fd, struct epoll_event *event);//对epoll进行操作，可以将新建立的socket加入epoll中也可以将旧的socket移出epoll，不再对其进行监控
+epoll_ctr对描述符所对应的事件进行操作
+op：
+	EPOLL_CTL_ADD 添加
+	EPOLL_CTL_MOD 修改
+	EPOLL_CTL_DEL 删除
+event:
+	EPOLLIN   可读事件
+	EPOLLOUT  可写事件
+	EPOLLET   边缘事件
+
 int epoll_wait(int epfd, struct epoll_event *event, int maxevents, int timeout); //在调用时，当给定的timeout时间内，监控的句柄有事件发生时，就返回用户态的进程
+epoll_wait 开始epoll监听，将就绪的事件放到event时间数组中
+maxevents表示单次最大可处理的就绪事件数，不应该超过epoll_create中的size
+
 ```
 对比epoll和select/poll来看，后者是在每次调用时都需要将所有的句柄传入，将用户态socket列表拷贝到内核态，如果有数万计的就会出现几十几百KB这是非常的低效的。调用epoll_wait就相当于调用select，但是不需要将句柄进行copy，因为句柄已经在epoll_create时被copy到内核中
 ```
@@ -156,7 +171,7 @@ EPOLL_CTL_ADD 添加
 EPOLL_CTL_MOD 修改
 EPOLL_CTL_DEL 删除
 
-epoll_wait 开始epoll
+epoll_wait 开始epoll监听，
 
 ```
 
