@@ -156,7 +156,7 @@ EPOLL_CTL_ADD 添加
 EPOLL_CTL_MOD 修改
 EPOLL_CTL_DEL 删除
 
-epoll_
+epoll_wait 开始epoll
 
 ```
 
