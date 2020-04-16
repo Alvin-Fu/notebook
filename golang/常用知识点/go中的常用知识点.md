@@ -152,6 +152,8 @@ int epoll_wait(int epfd, struct epoll_event *event, int maxevents, int timeout);
 对比epoll和select/poll来看，后者是在每次调用时都需要将所有的句柄传入，将用户态socket列表拷贝到内核态，如果有数万计的就会出现几十几百KB这是非常的低效的。调用epoll_wait就相当于调用select，但是不需要将句柄进行copy，因为句柄已经在epoll_create时被copy到内核中
 ```
 epoll_ctr函数是对句柄的操作(添加，修改，删除)
+EPOLL_CTL_ADD 添加
+EPOLL_CTL_MOD 修改
 
 ```
 
