@@ -154,7 +154,7 @@ int epoll_wait(int epfd, struct epoll_event *event, int maxevents, int timeout);
 epoll_ctr函数是对句柄的操作(添加，修改，删除)
 EPOLL_CTL_ADD 添加
 EPOLL_CTL_MOD 修改
-
+EPOLL_CTL_DEL 删除
 ```
 
 
