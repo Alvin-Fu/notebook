@@ -150,7 +150,7 @@ int epoll_ctr(int epfd, int op, int fd, struct epoll_event *event);//对epoll进
 int epoll_wait(int epfd, struct epoll_event *event, int maxevents, int timeout); //在调用时，当给定的timeout时间内，监控的句柄有事件发生时，就返回用户态的进程
 ```
 对比epoll和select/poll来看，后者是在每次调用时都需要将所有的句柄传入，将用户态socket列表拷贝到内核态，如果有数万计的就会出现几十几百KB这是非常的低效的。调用epoll_wait就相当于调用select，但是不需要将句柄进行copy，因为句柄已经在epoll_create时被copy到内核中
-
+epoll_
 
 
 
