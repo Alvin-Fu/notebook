@@ -149,7 +149,7 @@ int epoll_create(int size); //创建一个epoll对象,size是代表内核可以�
 int epoll_ctr(int epfd, int op, int fd, struct epoll_event *event);//对epoll进行操作，可以将新建立的socket加入epoll中也可以将旧的socket移出epoll，不再对其进行监控
 int epoll_wait(int epfd, struct epoll_event *event, int maxevents, int timeout); //在调用时，当给定的timeout时间内，监控的句柄有事件发生时，就返回用户态的进程
 ```
-在调用epoll_create的时候内核中
+对比epoll和
 
 
 
