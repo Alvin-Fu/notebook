@@ -165,15 +165,8 @@ maxevents表示单次最大可处理的就绪事件数，不应该超过epoll_cr
 
 ```
 对比epoll和select/poll来看，后者是在每次调用时都需要将所有的句柄传入，将用户态socket列表拷贝到内核态，如果有数万计的就会出现几十几百KB这是非常的低效的。调用epoll_wait就相当于调用select，但是不需要将句柄进行copy，因为句柄已经在epoll_create时被copy到内核中
-```
-epoll_ctr函数是对句柄的操作(添加，修改，删除)
-EPOLL_CTL_ADD 添加
-EPOLL_CTL_MOD 修改
-EPOLL_CTL_DEL 删除
 
-epoll_wait 开始epoll监听，
-
-```
+linux内核中一切皆文件，epoll在创建的时候想内核中
 
 
 
