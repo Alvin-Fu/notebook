@@ -167,7 +167,7 @@ maxevents表示单次最大可处理的就绪事件数，不应该超过epoll_cr
 对比epoll和select/poll来看，后者是在每次调用时都需要将所有的句柄传入，将用户态socket列表拷贝到内核态，如果有数万计的就会出现几十几百KB这是非常的低效的。调用epoll_wait就相当于调用select，但是不需要将句柄进行copy，因为句柄已经在epoll_create时被copy到内核中
 
 linux内核中一切皆文件，epoll向内核中注册一个文件系统，用于存储被监控的socket。在调用epoll_ctr的时候就会在这个虚拟的epoll文件系统里创建一个file结点，这个file不是普通文件，只服务于epoll
-epoll在系统初始化的时候会开辟自己的高速cache区，用于存放我们想要监控的socket，这些socket使用红黑树的形式被存放在内核cache层，支持快速查找，删除，增加操作。
+epoll在系统初始化的时候会开辟自己的高速cache区，用于存放我们想要监控的socket，这些socket使用红黑树的形式被存放在内核cache层，支持快速查找，删除，增加操作。这个高速cache区，就是建立连续的
 
 
 
