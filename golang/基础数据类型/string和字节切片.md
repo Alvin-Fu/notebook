@@ -19,6 +19,7 @@ BenchmarkStringToBytes-8         	30068103	        39.0 ns/op
 BenchmarkStringToBytesHeader-8   	160642612	         7.47 ns/op
 ```
 
+
 ### []byte到string
 ```
 func ByteStringPointer(b []byte) string{
