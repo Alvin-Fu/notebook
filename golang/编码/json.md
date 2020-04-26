@@ -134,6 +134,31 @@ func main(){
 // marshal data: {"name":"tom","Age":2,"password":"12345","profile":{"site":"","slogan":""}}
 ```
 可以看到使用omitempty在空结构体中是没有用的
+```
+type User struct {
+	Name string `json:"name"`
+	Age int64
+	Password string `json:"password,omitempty"`
+	*Profile  `json:"profile,omitempty"`
+}
+
+type Profile struct {
+	Website string `json:"site"`
+	Slogan string `json:"slogan"`
+}
+
+func main(){
+	u := &User{
+		Name: "tom",
+		Age: 2,
+		Password: "12345",
+	}
+	data, _ := json.Marshal(u)
+	fmt.Printf("marshal data: %s", string(data))
+}
+// marshal data: {"name":"tom","Age":2,"password":"12345"}
+```
+
 
 
 
