@@ -58,8 +58,59 @@ marshal data: {"name":"tom","Age":2} 结果中就没有了空值
 ## 忽略嵌套的空结构体
 在使用的过程经常会碰到结构体的嵌套
 ```
+type User struct {
+	Name string `json:"name"`
+	Age int64
+	Password string `json:"password,omitempty"`
+	Profile  
+}
+
+type Profile struct {
+	Website string `json:"site"`
+	Slogan string `json:"slogan"`
+}
+
+func main(){
+	u := &User{
+		Name: "tom",
+		Age: 2,
+		Password: "12345",
+	}
+	data, _ := json.Marshal(u)
+	fmt.Printf("marshal data: %s", string(data))
+}
+// marshal data: {"name":"tom","Age":2,"password":"12345","site":"","slogan":""}
+```
 
 ```
+
+type User struct {
+	Name string `json:"name"`
+	Age int64
+	Password string `json:"password,omitempty"`
+	Profile  `json:"profile"`
+}
+
+type Profile struct {
+	Website string `json:"site"`
+	Slogan string `json:"slogan"`
+}
+
+func main(){
+	u := &User{
+		Name: "tom",
+		Age: 2,
+		Password: "12345",
+	}
+	data, _ := json.Marshal(u)
+	fmt.Printf("marshal data: %s", string(data))
+}
+// marshal data: {"name":"tom","Age":2,"password":"12345","profile":{"site":"","slogan":""}}
+```
+通过两个例子可以看到有tag和没有tag两个的序列化是不一样的
+
+
+
 
 
 
