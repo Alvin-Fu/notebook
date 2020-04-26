@@ -38,7 +38,7 @@ func main(){
 type People struct {
 	Name string `json:"name"`
 	Age int64
-	Password string `json: "password,omitempty"`
+	Password string `json:"password,omitempty"`
 }
 
 func main(){
@@ -53,6 +53,17 @@ func main(){
 	fmt.Printf("marshal data: %s", string(data))
 }
 ```
+marshal data: {"name":"tom","Age":2} 结果中就没有了空值
+
+## 忽略嵌套的空结构体
+在使用的过程经常会碰到结构体的嵌套
+
+
+
+
+
+
+
 
 
 
