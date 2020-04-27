@@ -163,9 +163,35 @@ func main(){
 ## 不修改原结构体忽略控制字段
 在序列化的时候如果不想将结构体中的某个字段进行序列化，并且不想改结构体，可以新创建一个结构体并将原结构体匿名引用，并同时指定那个字段没结构体指针类型
 ```
+type User struct {
+	Name string `json:"name"`
+	Age int64
+	Password string `json:"password"`
 
+}
+
+type Profile struct {
+	*User
+	Password *struct{} `json:"password,omitempty"`
+}
+
+
+func main(){
+	u := &User{
+		Name: "tom",
+		Age: 2,
+		Password: "12345",
+	}
+	p := &Profile{User:u}
+	data, _ := json.Marshal(p)
+	fmt.Printf("marshal data: %s", string(data))
+}
+// marshal data: {"name":"tom","Age":2}
 ```
 
+
+## 如何优雅的处理数字格式的字符串
+在使用的过程中
 
 
 
