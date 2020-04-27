@@ -211,7 +211,9 @@ func main(){
 // unmarshal number: &{ID:1234 Chip:87.9}
 ```
 
-## 
+## 整数变浮点数
+在json协议中没有去区分
+
 
 
 
