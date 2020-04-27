@@ -213,6 +213,25 @@ func main(){
 
 ## 整数变浮点数
 在json协议中没有去区分
+```
+func main(){
+	var tmp1 = make(map[string]interface{})
+	tmp1["count"] = 1  // int
+	m1, _ := json.Marshal(tmp1)
+	fmt.Printf("marshal: %s\n", string(m1))
+	var tmp2 = make(map[string]interface{})
+	json.Unmarshal(m1, &tmp2)
+	fmt.Printf("value: %v\n", tmp2["count"])
+	fmt.Printf("type: %T\n", tmp2["count"])
+}
+/*
+marshal: {"count":1}
+value: 1
+type: float64
+*/
+从结果可以看出来赋值的时候使用的是int，在解码的时候就变成了浮点型了
+```
+
 
 
 
