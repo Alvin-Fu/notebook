@@ -194,7 +194,24 @@ func main(){
 在使用的过程中经常会出现字符串类型的数字，结构体的tag中添加string进行转化
 ```
 
+type Number struct {
+	ID int64 `json:"id,string"`
+	Chip float64 `json:"chip,string"`
+}
+
+func main(){
+	jsonStr := `{"id":"1234", "chip":"87.9"}`
+	n := new(Number)
+	err := json.Unmarshal([]byte(jsonStr), n)
+	if err != nil {
+		os.Exit(-1)
+	}
+	fmt.Printf("unmarshal number: %+v", n)
+}
+// unmarshal number: &{ID:1234 Chip:87.9}
 ```
+
+## 
 
 
 
