@@ -306,5 +306,5 @@ func main(){
 
 
 [常见问题](https://www.cnblogs.com/wpgraceii/p/10528183.html)
-
+[go语言问题集](https://www.bookstack.cn/read/qcrao-Go-Questions/spilt.9.GC-GC.md)
 
