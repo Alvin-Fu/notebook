@@ -225,7 +225,7 @@ java的jvm使用的就是分代回收的思路。在面向对象编程语言中�
 3. 第二次标记（STW）
 4. 清除（并发）
 理解四个阶段：
-- 先STW做一些准备工作，比如写屏障(enable write barrier)。然后
+- 先STW做一些准备工作，比如写屏障(enable write barrier)。然后取消STW，将扫描任务作为多个并发的
 
 
 
