@@ -209,7 +209,7 @@ epoll和select比起来就是使用空间换取时间，即使用了一定的内
 有很多mark&sweep算法的变种(三色标记法)
 
 ##### 分代搜集(generation)
-java
+java的jvm使用的就是分代回收的思路。在
 
 
 
