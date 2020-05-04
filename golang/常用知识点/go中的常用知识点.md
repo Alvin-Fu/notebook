@@ -257,6 +257,7 @@ goroutine是通过GPM调度模型实现
 - P：process，处理器，主要用途用于执行goroutine，它有维护一个goroutine队列，里面存储着需要它来执行的goroutine
 - Sched: 代表调度器，它维护有存储M和G的队列以及调度器的一些状态信息等
 
+**调度实现**
 
 
 
