@@ -254,7 +254,7 @@ goroutine是通过GPM调度模型实现
 
 - M：代表一个内核级线程，一个M就是一个线程，goroutine就跑在M上。M结构体中有维护小对象内存cache(mcache)，当前执行的goroutine、随机数发生器等非常多的信息
 - G：代表一个goroutine，他有自己的栈，instruction pointe和其他信息(正在等待的channel等)，用于调度
-- P：代表一个
+- P：process，处理器，主要用途用于
 
 
 
