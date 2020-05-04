@@ -268,6 +268,7 @@ goroutine是通过GPM调度模型实现
 
 
 
+
 ### 20、range和iteration的关系
 ```
 // 对range的测试, 在range的使用过程中需要注意range是将当前的值copy了一份，因此在改的时候需要注意
