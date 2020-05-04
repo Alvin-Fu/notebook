@@ -252,7 +252,7 @@ goroutine是go语言中最经典的设计，也是其魅力所在，是go中实�
 goroutine是通过GPM调度模型实现
 有四个重要结构：M，P，S，Sched
 
-- M：代表一个内核级线程，一个M就代表一个
+- M：代表一个内核级线程，一个M就是一个线程，goroutine
 
 
 
