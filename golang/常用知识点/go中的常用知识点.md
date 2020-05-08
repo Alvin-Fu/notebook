@@ -345,7 +345,8 @@ Unix Domain Socket是用于同一主机的进程之间的通信，他会比TCP�
 IPC机制本质上是可靠的通讯，而网络协议是为不可靠的通讯设计的
 UDS有两种工作模式：
 
-- SOCK_
+- SOCK_STREAM类似于TCP可靠的字节流
+- 
 
 
 
