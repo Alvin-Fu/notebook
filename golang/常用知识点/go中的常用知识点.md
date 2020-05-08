@@ -340,7 +340,7 @@ func main(){
 
 
 ### 21、unix socket和tcp socket
-socket API原本是为了网络通信设计的，但是后来在socket的框架
+socket API原本是为了网络通信设计的，但是后来在socket的框架上发展出一种IPC机制，就是Unix Domain
 
 
 
