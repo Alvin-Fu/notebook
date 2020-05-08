@@ -340,7 +340,7 @@ func main(){
 
 
 ### 21、unix socket和tcp socket
-socket 
+socket API原本是为了网络通信设计的，但是后来在socket的框架
 
 
 
