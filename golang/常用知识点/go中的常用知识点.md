@@ -279,7 +279,6 @@ goroutine是通过GPM调度模型实现
 
 
 
-### 
 
 ### 20、range和iteration的关系
 ```
@@ -338,6 +337,9 @@ func main(){
 }
 ```
 [演示](https://play.golang.org/p/jGGMrAM7Yb2)
+
+
+### 21、
 
 
 
