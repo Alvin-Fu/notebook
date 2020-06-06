@@ -297,8 +297,8 @@ goroutine是通过GPM调度模型实现
 
 **负载均衡算法**
 - Round Robin(轮询)
-- Least Connections(最小连接)
-- Source:根据请求源的IP的散列(hash)来选择要转发的服务。可以在一定程度上保证特定用户能连接到
+- Least Connections(最小连接)：优先选择连接数最少的
+- Source:根据请求源的IP的散列(hash)来选择要转发的服务。可以在一定程度上保证特定用户能连接到相同的服务器上
 
 
 
