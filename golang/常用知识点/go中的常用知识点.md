@@ -324,6 +324,9 @@ LVS是一个实现负载均衡集群的开源项目，LVS架构从逻辑上可�
 ![LVS原理图](../../.local/static/2020/5/0/LVS.1591526911492.png)
 
 
+[LVS原理](https://segmentfault.com/a/1190000020288049)
+
+
 
 
 
