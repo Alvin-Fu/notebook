@@ -316,6 +316,7 @@ hash算法和单调性，单调性是指如果已经有一些内容通过哈希�
 
 ### 15、LVS相关了解
 LVS(Linux Virtual Server)Linux虚拟服务器，现在是Linux内核标准的一部分
+通过LVS可以达到的
 
 
 
