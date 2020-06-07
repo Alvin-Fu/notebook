@@ -315,7 +315,7 @@ hash算法和单调性，单调性是指如果已经有一些内容通过哈希�
 如果想解决均衡算法的单点故障问题，可以将第二个负载均衡器连接到第一个上形成一个集群
 
 ### 15、LVS相关了解
-LVS(Linux Virtual Server)Linux
+LVS(Linux Virtual Server)Linux虚拟服务器
 
 
 
