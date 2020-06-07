@@ -316,7 +316,7 @@ hash算法和单调性，单调性是指如果已经有一些内容通过哈希�
 
 ### 15、LVS相关了解
 LVS(Linux Virtual Server)Linux虚拟服务器，现在是Linux内核标准的一部分
-通过LVS可以达到的技术目标：通过LVS达到负载均衡技术和Linux操作系统实现一个高性能
+通过LVS可以达到的技术目标：通过LVS达到负载均衡技术和Linux操作系统实现一个高性能高可用的Linux服务器集群
 
 
 
