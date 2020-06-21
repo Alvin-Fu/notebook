@@ -25,7 +25,7 @@ reids中定以了几种策略来处理这种情况：
 
 ## LRU算法
 ### 什么是LRU算法
-LRU(Least Recently Used)，最近最少使用，是一种缓存置换算法
+LRU(Least Recently Used)，最近最少使用，是一种缓存置换算法，在一般将近期使用过的
 
 
 
