@@ -20,5 +20,6 @@ reids中定以了几种策略来处理这种情况：
 - volatile-random：从设置了过期时间的key中随机删除
 - volatile-ttl：在设置了过期时间的key中，越早过期的优先被淘汰
 
-查看`config get maxmemory-policy`
+查看淘汰策略`config get maxmemory-policy`
+设置淘汰策略`config set maxmemory`
 
