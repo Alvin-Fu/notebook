@@ -6,4 +6,5 @@
 `maxmemory 100mb  //设置为100M`
 
 ### 2、通过命令修改
-在客户端进行修改`config set maxmemory 100md`  `config get m`
+在客户端进行修改`config set maxmemory 100md`  `config get maxmemory`
+如果不设置在64位操作系统中不会堆
