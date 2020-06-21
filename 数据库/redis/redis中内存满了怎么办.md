@@ -27,7 +27,7 @@ reids中定以了几种策略来处理这种情况：
 ### 什么是LRU算法
 LRU(Least Recently Used)，最近最少使用，是一种缓存置换算法。
 redis种使用的是一种近似LRU算法，使用随机采样的方式淘汰数据，每次随机出5(默认)个key，从里面淘汰掉最近最少使用的一个key
-可以修改
+可以修改采样数量 `maxmemory-samples 10`
 
 
 
