@@ -1,1 +1,1 @@
-众所周知redis是基于内存的key-value结构的，由于系统内存的限制，在使用redis的时候我
+众所周知redis是基于内存的key-value结构的，由于系统内存的限制，在使用redis的时候我们可以配置redis能使用的最大内存大小
