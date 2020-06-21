@@ -21,5 +21,10 @@ reids中定以了几种策略来处理这种情况：
 - volatile-ttl：在设置了过期时间的key中，越早过期的优先被淘汰
 
 查看淘汰策略`config get maxmemory-policy`
-设置淘汰策略`config set maxmemory`
+设置淘汰策略`config set maxmemory-policy allkeys-lru`
+
+## LRU算法
+### 什么是LRU算法
+
+
 
