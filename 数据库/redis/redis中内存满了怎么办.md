@@ -25,6 +25,7 @@ reids中定以了几种策略来处理这种情况：
 
 ## LRU算法
 ### 什么是LRU算法
+LRU(Least Recently Used)，
 
 
 
