@@ -1,0 +1,1 @@
+众所周知redis是基于内存的key-value结构的
