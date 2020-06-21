@@ -1,1 +1,1 @@
-众所周知redis是基于内存的key-value结构的
+众所周知redis是基于内存的key-value结构的，由于系统内存的限制，在使用redis的时候我
