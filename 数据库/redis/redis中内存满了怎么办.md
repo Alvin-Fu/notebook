@@ -14,4 +14,5 @@
 reids中定以了几种策略来处理这种情况：
 
 - noeviction(默认策略)： 对于写请求不在进行处理
-- allkeys-lru: 从
+- allkeys-lru: 从所有key中使用LRU算法进行淘汰
+- 
