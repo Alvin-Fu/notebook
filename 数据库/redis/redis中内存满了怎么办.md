@@ -37,6 +37,6 @@ LFU(Least Frequently Used)算法是redis4.0中新加的一种淘汰策略,核心
 LFU中的策略：
 
 - volatile-lfu：在设置了过期时间的key中使用LFU算法淘汰key
-- allkeys-lfu：在所有
+- allkeys-lfu：在所有的key中使用LFU算法淘汰数据
 
 
