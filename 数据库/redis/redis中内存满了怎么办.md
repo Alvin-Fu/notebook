@@ -4,3 +4,5 @@
 ### 1、通过配置文件配置
 通过redis的redis.conf文件可以配置内存大小 
 `maxmemory 100mb  //设置为100M`
+
+### 2、
