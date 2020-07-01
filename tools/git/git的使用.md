@@ -23,4 +23,6 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 
 ## git使用时出现的问题
 ### 1、 ERROR: Repository not found
-在使用的过程会
+在使用的过程会出现远端url的报错
+
+``
