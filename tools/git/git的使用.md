@@ -21,3 +21,5 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 ```
 如果分支是干净的就不会出现这种问题
 
+## git使用时出现的问题
+### 1、 
