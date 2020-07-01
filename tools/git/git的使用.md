@@ -25,4 +25,6 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 ### 1、 ERROR: Repository not found
 在使用的过程会出现远端url的报错
 使用remote解决
-`git remote ser-url origin git@github.com:xxxx/xxx.git` 一般使用url就可以了，主要要
+`git remote ser-url origin git@github.com:xxxx/xxx.git` 一般使用url就可以了，主要要加.git
+`git remote ser-url origin https://xxx/xxx/xxx.git`
+
