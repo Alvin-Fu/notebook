@@ -29,4 +29,5 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 `git remote ser-url origin https://xxx/xxx/xxx.git`
 
 **查看**
-·git remote -v
+`git remote -v`
+
