@@ -15,7 +15,7 @@ go modules的使用 go1.13版本
 
 当遇到基础问题时**通过golang-nuts邮件组搜索问题**， 还可以在**go仓库的issue中搜索**
 
-
+[golang的邮件组](https://groups.google.com/forum/#!forum/golang-nuts)
 
 
 [详细的介绍了module的使用](https://roberto.selbach.ca/intro-to-go-modules/)
