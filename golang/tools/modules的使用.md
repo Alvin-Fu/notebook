@@ -13,5 +13,8 @@ go modules的使用 go1.13版本
 - 如何间接更新依赖
 - 如何更新所有的依赖
 
+**通过golang-nuts邮件组搜索问题**
+
+
 
 [详细的介绍了module的使用](https://roberto.selbach.ca/intro-to-go-modules/)
