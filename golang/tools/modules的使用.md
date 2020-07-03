@@ -7,6 +7,7 @@ go modules的使用 go1.13版本
 	`go mod vendor  和 go build -mod vendor` 将内容指定到vendor中
 
 ### 更新Go Module项目的依赖
+如何一键升级项目中的
 
 
 [详细的介绍了module的使用](https://roberto.selbach.ca/intro-to-go-modules/)
