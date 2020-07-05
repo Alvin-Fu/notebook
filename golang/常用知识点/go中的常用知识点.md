@@ -349,7 +349,8 @@ LVS的组成：两部分组成IPVS和IPVSADM
 6. Docker部署管理kubenetter
 7. 自动集成部署CI/CD实践
 8. 自动扩容机制规则
-9. 		
+9. 压测 优化
+10. Trasport数据传输		
 
 
 
