@@ -346,7 +346,8 @@ LVS的组成：两部分组成IPVS和IPVSADM
 3. 链路监控， zipkin和Prometheus
 4. 多级缓存
 5. 网关（kong gateway）
-6. 		
+6. Docker部署管理kubenetter
+7. 自动		
 
 
 
