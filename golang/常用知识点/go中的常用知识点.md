@@ -352,7 +352,7 @@ LVS的组成：两部分组成IPVS和IPVSADM
 9. 压测 优化
 10. Trasport数据传输(序列号和反序列化)
 11. Logging日志
-12. Metrics指针对		
+12. Metrics指针对每个请求信息的仪表盘化		
 
 
 
