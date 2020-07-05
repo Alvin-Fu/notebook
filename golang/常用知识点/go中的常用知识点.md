@@ -333,7 +333,6 @@ LVS的组成：两部分组成IPVS和IPVSADM
 1. ipvs(ip virtual server)：一段代码工作在内核空间，叫ipvs，是真正生效实现调度的代码
 2. ipvsadm: 工作在用户空间的代码，负责为ipvs内核框架编写规则，定以谁是集群服务，而谁是后端真实的服务器(Real Server)
 
-
 [LVS原理](https://segmentfault.com/a/1190000020288049)
 
 
