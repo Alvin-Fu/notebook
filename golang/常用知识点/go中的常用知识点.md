@@ -343,7 +343,10 @@ LVS的组成：两部分组成IPVS和IPVSADM
 微服务架构设计包括：
 1. 服务熔断降级限流机制，熔断降级的概念(Rate Limiter限流器，Circuit breaker断路器) 	
 2. 框架调用方式解耦方式Kit或Lstio或Micro服务发现(consul zookeeper kubeneters etcd)RPC调用框架
-3. 链路监控， 		
+3. 链路监控， zipkin和Prometheus
+4. 多级缓存
+5. 网关（kong gateway）
+6. 		
 
 
 
