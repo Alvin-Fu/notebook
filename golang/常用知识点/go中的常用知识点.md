@@ -329,7 +329,8 @@ LVS是一个实现负载均衡集群的开源项目，LVS架构从逻辑上可�
 3. IPVS是工作在INPUT链上的当用户请求到达INPUT时，IPVS会将用户请求和自己以定义好的集群服务器进行比对，如果用户请求的就是定义的集群服务，那么此时IPVS会强行修改数据包里的目标IP地址及端口，并将新的数据包发往POSTROUTING链
 4. POSTROUTING链接收数据包后发信啊目标IP地址刚好是自己的后端服务器，那么此时通过选路，将数据包最终发送到后端的服务器
 
-LVS的组成：两部分组成IPVS和
+LVS的组成：两部分组成IPVS和IPVSADM
+1. ipvs(ip virtual server)：一段
 
 
 [LVS原理](https://segmentfault.com/a/1190000020288049)
