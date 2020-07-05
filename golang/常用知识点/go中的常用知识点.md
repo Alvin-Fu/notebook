@@ -350,7 +350,9 @@ LVS的组成：两部分组成IPVS和IPVSADM
 7. 自动集成部署CI/CD实践
 8. 自动扩容机制规则
 9. 压测 优化
-10. Trasport数据传输		
+10. Trasport数据传输(序列号和反序列化)
+11. Logging日志
+12. Metrics指针对		
 
 
 
