@@ -330,7 +330,8 @@ LVS是一个实现负载均衡集群的开源项目，LVS架构从逻辑上可�
 4. POSTROUTING链接收数据包后发信啊目标IP地址刚好是自己的后端服务器，那么此时通过选路，将数据包最终发送到后端的服务器
 
 LVS的组成：两部分组成IPVS和IPVSADM
-1. ipvs(ip virtual server)：一段
+1. ipvs(ip virtual server)：一段代码工作在内核空间，叫ipvs，是真正生效实现调度的代码
+2. 
 
 
 [LVS原理](https://segmentfault.com/a/1190000020288049)
