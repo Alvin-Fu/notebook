@@ -381,7 +381,7 @@ LVS的组成：两部分组成IPVS和IPVSADM
 
 #### 基于缓存的实现方式
 基于redis的实现方式
-
+选用Redis实现分布式锁原因：*redis有很高*
 
 
 
