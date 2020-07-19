@@ -389,7 +389,7 @@ LVS的组成：两部分组成IPVS和IPVSADM
 缺点：使用redis主从切换时可能丢失部分数据
 
 #### 基于zookeeper的实现
-zk
+zk是一个为
 
 
 
