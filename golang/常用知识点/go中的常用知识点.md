@@ -388,6 +388,9 @@ LVS的组成：两部分组成IPVS和IPVSADM
 优点：性能高，redis可持久化，也能保证数据不易丢失，redis集群方式提高稳定性
 缺点：使用redis主从切换时可能丢失部分数据
 
+#### 基于zookeeper的
+
+
 
 
 
