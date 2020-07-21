@@ -6,3 +6,4 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 ```
 这个主要是kafka配置中的配置出错需要修改
 `listeners=PLAINTEXT://:9092或者advertised.listeners=PLAINTEXT://localhost:9092`
+
