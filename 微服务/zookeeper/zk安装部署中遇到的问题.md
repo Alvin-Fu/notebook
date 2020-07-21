@@ -16,5 +16,11 @@ ping master
 `2020-07-21 11:10:19,084 [myid:1] - ERROR [main:QuorumPeerMain@92] - Unexpected exception, exiting abnormally java.net.BindException: Address already in use`
 这个是2181的端口被占用了，`netstat -atunlp|grep 2181`使用这个去查看
 
-### 连接被
+### 连接被拒绝的情况
+```
+2020-07-21 12:13:42,324 [myid:1] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@584] - Cannot open channel to 2 at election address master/127.0.0.1:3889
+java.net.ConnectException: Connection refused (Connection refused)
+```
+这种说明server1被选
+
 
