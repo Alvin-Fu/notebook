@@ -4,7 +4,9 @@
 需要添加主机名的映射
 ```
 vim /etc/hosts
-添加格式**ip  **
+添加格式**ip  hostname**
+如：
+127.0.0.1   master
 ```
 
 
