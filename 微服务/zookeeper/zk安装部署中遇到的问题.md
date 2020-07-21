@@ -7,6 +7,9 @@ vim /etc/hosts
 添加格式**ip  hostname**
 如：
 127.0.0.1   master
+
+检测
+ping master
 ```
 
 
