@@ -22,6 +22,6 @@ ping master
 java.net.ConnectException: Connection refused (Connection refused)
 ```
 这种说明server1被选择为follower
-这时应该启动server2这样会发现server2
+这时应该启动server2这样会发现server2被选举为leader
 
 
