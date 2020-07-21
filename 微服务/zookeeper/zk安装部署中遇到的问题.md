@@ -1,6 +1,7 @@
 ### 配置是使用的主机名映射有问题
 `[myid=1]/0:0:0:0:0:0:0:0:2181:QuorumPeer$QuorumServer@190] - Failed to resolve address: slave-03`
 这是是配置中使用的主机名的映射不存在
+需要添加主机名的映射`vim /etc/hosts`
 
 
 ### 地址被使用
