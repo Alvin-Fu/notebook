@@ -21,6 +21,7 @@ ping master
 2020-07-21 12:13:42,324 [myid:1] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@584] - Cannot open channel to 2 at election address master/127.0.0.1:3889
 java.net.ConnectException: Connection refused (Connection refused)
 ```
-这种说明server1被选
+这种说明server1被选择为follower
+这时应该启动server2这样会发现server2
 
 
