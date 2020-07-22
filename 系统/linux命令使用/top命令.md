@@ -1,6 +1,6 @@
 **top命令中缩写的含义**
 
-### 内存
+### 内存相关项
 ```
  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND 
 
