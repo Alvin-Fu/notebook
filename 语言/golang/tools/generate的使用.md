@@ -5,5 +5,6 @@
 // NOTE: change -lang option to add more languages support.
 //go:generate gotext -srclang=en update -out=catalog.go -lang=en,zh-hans,zh-hant
 
+gotext
 
 ```
