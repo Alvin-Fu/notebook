@@ -6,6 +6,8 @@
 //go:generate gotext -srclang=en update -out=catalog.go -lang=en,zh-hans,zh-hant
 
 gotext用于管理源码中的文本
-	update用于更新翻译和
+	update用于更新翻译和generate输出的catalog文件，
+
+-out是指定输出的.go文件的
 
 ```
