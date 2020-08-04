@@ -20,7 +20,7 @@ func main(){
        acceptPrinter[tag.String()] = message.NewPrinter(tag)
     }
     p := GetPrinter(language.English.String())
-    p.Printf("login multiple times")
+    p.Printf("Hello world")
     p.Println()
 }
 // GetPrinter return a printer by language string, if printer not found, return a default printer.
@@ -38,6 +38,6 @@ func GetPrinter(lang string) *message.Printer {
     return p
 }
 ```
-
+如果没有
 
 ![代码的目录结构](../../../.local/static/2020/7/2/Snipaste_2020-08-04_18-23-02.1596536716616.png)
