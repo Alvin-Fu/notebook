@@ -38,6 +38,6 @@ func GetPrinter(lang string) *message.Printer {
     return p
 }
 ```
-如果没有
+如果没有`p.Printf("Hello world")` 
 
 ![代码的目录结构](../../../.local/static/2020/7/2/Snipaste_2020-08-04_18-23-02.1596536716616.png)
