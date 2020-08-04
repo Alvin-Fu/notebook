@@ -1,5 +1,8 @@
 **使用generate自动生成代码**
 需要引入的包
+```
+go get golang.org/x/tools/cmd/stringer
+```
 
 
 ## 多语言
