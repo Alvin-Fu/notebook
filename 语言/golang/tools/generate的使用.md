@@ -8,6 +8,6 @@
 gotext用于管理源码中的文本
 	update用于更新翻译和generate输出的catalog文件，
 
--out是指定输出的.go文件的
+-out是指定输出的.go文件的位置， -lang是指定语言的类型
 
 ```
