@@ -19,14 +19,9 @@ func main(){
     for _, tag := range message.DefaultCatalog.Languages() {
        acceptPrinter[tag.String()] = message.NewPrinter(tag)
     }
-    //p := GetPrinter(language.English.String())
-    //p.Printf("login multiple times")
-    //p.Println()
-    //p.Printf("client request error")
-    //p.Println()
-    ph := GetPrinter("zh-Hans")
-    ph.Printf("login multiple times")
-
+    p := GetPrinter(language.English.String())
+    p.Printf("login multiple times")
+    p.Println()
 }
 // GetPrinter return a printer by language string, if printer not found, return a default printer.
 func GetPrinter(lang string) *message.Printer {
