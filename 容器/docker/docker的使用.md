@@ -6,6 +6,7 @@ docker rmi $(docker images -q) 删除docker中所有的镜像
 `docker run -itd --privileged=treu --name redis -p 6379:6379 -v /home/appuser/docker/redis/conf/redis.conf:/etc/redis/redis.conf -v /home/appuser/docker/redis/data/:/data redis`
 ```
 --privileged=true: 让容器内的root拥有真正的root权限，否则容器内的root只是外部的普通用户权限
+-v /home/appuser/docker/redis/conf/redis.conf:/etc/redis/redis.conf：映射
 ```
 
 
