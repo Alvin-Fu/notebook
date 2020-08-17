@@ -4,8 +4,8 @@ docker rmi $(docker images -q) 删除docker中所有的镜像
 ### 容器的使用
 ### 进入容器
 进入容器在使用了-d参数以后可进入容器
-- docker attach id
-- docker exi
+- docker attach id  
+- docker exec id
 
 ### docker中使用redis
 `docker run -itd --privileged=true --name redis -p 6379:6379 -v /home/appuser/docker/redis/conf/redis.conf:/etc/redis/redis.conf -v /home/appuser/docker/redis/data/:/data redis --appendonly yes`
