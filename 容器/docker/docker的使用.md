@@ -3,7 +3,7 @@ docker rmi $(docker images -q) 删除docker中所有的镜像
 
 
 ### docker中使用redis
-`docker run -itd --privileged=treu --name redis -p 6379:6379 -v /home/appuser/docker/redis/conf/redis.conf:/etc/redis/redis.conf -v /home/appuser/docker/redis/data/:/data redis --appendonly yes`
+`docker run -itd --privileged=true --name redis -p 6379:6379 -v /home/appuser/docker/redis/conf/redis.conf:/etc/redis/redis.conf -v /home/appuser/docker/redis/data/:/data redis --appendonly yes`
 ```
 -itd分别表示：
 	- -i --interactive 表示即使没有连接，也保持标准输入打开，一般和-t连用
