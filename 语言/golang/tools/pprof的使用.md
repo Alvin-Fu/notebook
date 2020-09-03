@@ -14,7 +14,7 @@
 
 #### heap的使用
 --inuser/alloc_space用于分析常驻内存
---inuser/alloc_object
+--inuser/alloc_object用于分析临时内存
 
 **生成正在使用的内存**
 `go tool pprof -inuse_space http://127.0.0.1:8080/debug/pprof/heap` 获取的是当前还在使用的内存
