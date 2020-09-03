@@ -4,7 +4,7 @@
 ### pprof的使用
 ![web界面图](../../../.local/static/2020/8/4/Snipaste_2020-09-03_11-17-28.1599103068236.png)
 
-
+**web部分**
 #### goroutine的使用
 `http://127.0.0.1:8080/debug/pprof/goroutine?debug=1` 在web界面使用debug=1和debug=2是会有不同的
 ![debug=1](../../../.local/static/2020/8/4/Snipaste_2020-09-03_11-21-30.1599103306017.png)
@@ -61,5 +61,6 @@ heap profile: 3190: 77516056 [54762: 612664248] @ heap/1048576
 heap的信息主要分为两部分，
 第一部分主要是打印为通过runtime.MemProfile()获取的runtime.MemProfileRecord记录
 第二部分主要是打印的是通过runtime.ReadMemStats()读取的runtime.MemStats信息
+
 
 
