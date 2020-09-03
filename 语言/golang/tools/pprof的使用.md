@@ -58,6 +58,6 @@ heap profile: 3190: 77516056 [54762: 612664248] @ heap/1048576
 # NumGC = 31
 # DebugGC = false
 ```
-heap的信息主要分为两部分，第一部分主要是
+heap的信息主要分为两部分，第一部分主要是打印为通过runtime.MemProfile()获取的runtime.MemProfileRecord记录
 
 
