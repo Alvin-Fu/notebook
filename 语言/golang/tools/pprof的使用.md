@@ -42,7 +42,7 @@ heap profile: 3190: 77516056 [54762: 612664248] @ heap/1048576
 # Mallocs = 274619648
 # Frees = 262711312
 # HeapAlloc = 2463648064   进程堆内存分配使用的空间，包含没有被释放的
-# HeapSys = 3877830656     
+# HeapSys = 3877830656     进程从系统中获取的堆内存空间
 # HeapIdle = 854990848
 # HeapInuse = 3022839808
 # HeapReleased = 0
