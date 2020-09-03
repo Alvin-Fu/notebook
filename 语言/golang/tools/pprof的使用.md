@@ -13,7 +13,9 @@
 图2是debug=2的情况，数字表示goroutine的id，[]里面的表示是怎么阻塞的，和等待的时间，同时也可以看到当前停在了哪一行
 
 #### heap的使用
---inuser/alloc_space  --inuser/alloc_obj
+--inuser/alloc_space用于分析常驻内存
+--inuser/alloc_object
+
 **生成正在使用的内存**
 `go tool pprof -inuse_space http://127.0.0.1:8080/debug/pprof/heap` 获取的是当前还在使用的内存
 `go-torch -inuse_space http://127.0.0.1:8080/debug/pprof/heap --colors=mem` 生成火焰图
