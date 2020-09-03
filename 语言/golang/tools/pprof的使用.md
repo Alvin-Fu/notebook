@@ -63,5 +63,5 @@ heap的信息主要分为两部分，
 第二部分主要是打印的是通过runtime.ReadMemStats()读取的runtime.MemStats信息
 
 **命令行界面**
-top命令
+top命令是会显示当前使用或者分配内存最多的
 
