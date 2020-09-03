@@ -20,8 +20,44 @@
 `go tool pprof -alloc_space http://127.0.0.1:8080/debug/pprof/heap` 获取的是当前还在使用的内存
 `go-torch -alloc_space http://127.0.0.1:8080/debug/pprof/heap --colors=mem` 生成火焰图
 
-```language
-
 ```
+heap profile: 3190: 77516056 [54762: 612664248] @ heap/1048576
+1: 29081600 [1: 29081600] @ 0x89368e 0x894cd9 0x8a5a9d 0x8a9b7c 0x8af578 0x8b4441 0x8b4c6d 0x8b8504 0x8b2bc3 0x45b1c1
+#    0x89368d    github.com/syndtr/goleveldb/leveldb/memdb.(*DB).Put+0x59d
+#    0x894cd8    xxxxx/storage/internal/memtable.(*MemTable).Set+0x88
+#    0x8a5a9c    xxxxx/storage.(*snapshotter).AppendCommitLog+0x1cc
+#    0x8a9b7b    xxxxx/storage.(*store).Update+0x26b
+#    0x8af577    xxxxx/config.(*config).Update+0xa7
+#    0x8b4440    xxxxx/naming.(*naming).update+0x120
+#    0x8b4c6c    xxxxx/naming.(*naming).instanceTimeout+0x27c
+#    0x8b8503    xxxxx/naming.(*naming).(xxxxx/naming.instanceTimeout)-fm+0x63
+
+......
+
+# runtime.MemStats
+# Alloc = 2463648064
+# TotalAlloc = 31707239480
+# Sys = 4831318840
+# Lookups = 2690464
+# Mallocs = 274619648
+# Frees = 262711312
+# HeapAlloc = 2463648064
+# HeapSys = 3877830656
+# HeapIdle = 854990848
+# HeapInuse = 3022839808
+# HeapReleased = 0
+# HeapObjects = 11908336
+# Stack = 655949824 / 655949824
+# MSpan = 63329432 / 72040448
+# MCache = 38400 / 49152
+# BuckHashSys = 1706593
+# GCSys = 170819584
+# OtherSys = 52922583
+# NextGC = 3570699312
+# PauseNs = [1052815 217503 208124 233034 1146462 456882 1098525 530706 551702 419372 768322 596273 387826 455807 563621 587849 416204 599143 572823 488681 701731 656358 2476770 12141392 5827253 3508261 1715582 1295487 908563 788435 718700 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+# NumGC = 31
+# DebugGC = false
+```
+heap的信息主要分为两部分，
 
 
