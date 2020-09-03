@@ -12,7 +12,7 @@
 图2是debug=2的情况，数字表示goroutine的id，[]里面的表示是怎么阻塞的，和等待的时间，同时也可以看到当前停在了哪一行
 
 #### heap的使用
-`go tool pprof -inuse_space http://192.168.203.32:15580/debug/pprof/heap` 获取的是当前还在使用的内存
-``
+`go tool pprof -inuse_space http://127.0.0.1:8080/debug/pprof/heap` 获取的是当前还在使用的内存
+`go-torch -inuse_space http://127.0.0.1:8080/debug/pprof/heap --colors=mem`
 
 
