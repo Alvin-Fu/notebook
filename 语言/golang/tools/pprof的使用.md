@@ -1,4 +1,5 @@
-**在使用pprof过程中的总结，排查内存泄露**
+**在使用pprof过程中的总结，排查内存泄露,内存泄露的主要原因就是**
+
 
 ### pprof的使用
 ![web界面图](../../../.local/static/2020/8/4/Snipaste_2020-09-03_11-17-28.1599103068236.png)
@@ -15,7 +16,7 @@
 **生成正在使用的内存**
 `go tool pprof -inuse_space http://127.0.0.1:8080/debug/pprof/heap` 获取的是当前还在使用的内存
 `go-torch -inuse_space http://127.0.0.1:8080/debug/pprof/heap --colors=mem` 生成火焰图
-**生成分配的内存**
+**生成分配的内存相关的**
 `go tool pprof -alloc_space http://127.0.0.1:8080/debug/pprof/heap` 获取的是当前还在使用的内存
 `go-torch -alloc_space http://127.0.0.1:8080/debug/pprof/heap --colors=mem` 生成火焰图
 
