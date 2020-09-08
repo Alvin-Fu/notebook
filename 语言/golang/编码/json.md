@@ -1,7 +1,8 @@
 # go中使用json时需要注意的点
 
 ## []byte的json化
-如果对字节切片进行marshal的时候，json会使用base64编码将[]byte
+如果对字节切片进行marshal的时候，json会使用base64编码将[]byte进行打包
+如果不想被打包指针类型*json.RawMessage
 
 ## 忽略某个字段
 在marshal和unmarshal的时候忽略某个字段的方法
