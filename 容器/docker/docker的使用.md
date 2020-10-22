@@ -1,27 +1,5 @@
 docker rm $(docker ps -aq)  删除docker中所有的容器
 docker rmi $(docker images -q) 删除docker中所有的镜像
 
-### 容器的使用
-### 进入容器
-进入容器在使用了-d参数以后可进入容器
-- docker attach id  如果从容器的终端退出会导致，该容器的退出
-- docker exec id    从终端退出不会导致，容器退出
-退出使用exit
-
-### docker中使用redis
-`docker run -itd --privileged=true --name redis -p 6379:6379 -v /home/appuser/docker/redis/conf/redis.conf:/etc/redis/redis.conf -v /home/appuser/docker/redis/data/:/data redis --appendonly yes`
-```
--itd分别表示：
-	- -i --interactive 表示即使没有连接，也保持标准输入打开，一般和-t连用
-	- -t --tty分配一个伪tty终端
-	- -d --depach 在后台运行容器，并打印容器id
---privileged=true: 让容器内的root拥有真正的root权限，否则容器内的root只是外部的普通用户权限
--v /home/appuser/docker/redis/conf/redis.conf:/etc/redis/redis.conf：映射本地的配置文件，前面的表示本地的，后面的表示容器中的
---appendonly yes：开启数据持久化
-```
-
-
-
-
 [快速获取docker的镜像和周边的安装包](https://get.daocloud.io/)
 
