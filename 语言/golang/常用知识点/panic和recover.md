@@ -1,2 +1,3 @@
 go中的panic和recover
-- panic可以终止当前的程序控制流，并且从当前的goroutine开始递归执行调用方的函数的
+- panic可以终止当前的程序控制流，并且从当前的goroutine开始递归执行调用方的函数的defer
+- recover可以中止panic造成的程序崩溃
