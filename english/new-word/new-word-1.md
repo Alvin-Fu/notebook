@@ -5,4 +5,5 @@
 |interactively|交互式的||
 |module|组件，模板||
 |screenshot|截图||
+|executable|可执行的，可执行文件||
 ||||
