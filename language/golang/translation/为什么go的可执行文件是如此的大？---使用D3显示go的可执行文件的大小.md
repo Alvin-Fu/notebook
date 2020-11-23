@@ -7,4 +7,4 @@
 想知道我发现了什么吗(继续往下看)
 [源代码地址]( https://github.com/knz/go-binsize-viz)
 ## 背景和动机
-我和我的同事是有准备
+我和我的同事是有准备发布CockroachDB的19.
