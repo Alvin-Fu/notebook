@@ -6,4 +6,4 @@
 |module|组件，模板||
 |screenshot|截图||
 |executable|可执行的，可执行文件||
-||||
+|factor|因素，||
