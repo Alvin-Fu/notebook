@@ -7,4 +7,4 @@
 想知道我发现了什么吗(继续往下看)
 [源代码地址]( https://github.com/knz/go-binsize-viz)
 ## 背景和动机
-我和我的同事正在忙着准备发布CockroachDB的最新19.1版本。CockroachDB是
+我和我的同事正在忙着准备发布CockroachDB的最新19.1版本。CockroachDB是作为一个包含了所有功能的可执行文件发布的。
