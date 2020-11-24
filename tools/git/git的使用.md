@@ -31,3 +31,7 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 **查看**
 `git remote -v`
 
+## 修改commit message
+使用git commit --amend可以对上一次的进行修改
+也可以使用git reset --soft (commit id) 进行修改
+
