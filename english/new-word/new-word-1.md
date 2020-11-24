@@ -3,4 +3,4 @@
 |-|-|-|
 | regular expression|正则表达式||
 |parameter|参数||
-|inscrutable|神秘的，不可理解的，||
+|inscrutable|神秘的，不可理解的，不可思议的||
