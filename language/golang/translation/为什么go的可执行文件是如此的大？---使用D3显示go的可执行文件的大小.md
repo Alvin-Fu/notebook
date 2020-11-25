@@ -32,7 +32,7 @@
  `10ddac0         17 t github.com/cockroachdb/cockroach/pkg/base.(*ClusterIDContainer).Unlock`
 - cgo条目编译通过C/C++，或者go的程序中有引入了外部的C/C++库。这些看起来是这样(模板过滤使用c++filt)：
 `28404a0         44 T rocksdb::PosixDirectory::~PosixDirectory()`
-第一列表示地址。
+第一列表示地址，在这里我们是没有兴趣的。
 
 
 
