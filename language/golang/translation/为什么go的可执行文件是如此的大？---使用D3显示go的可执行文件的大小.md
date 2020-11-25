@@ -30,7 +30,7 @@
 根据go tool nm -size的结果可以看到一个go的可执行文件包含两种类型的条目：
 - 从go编译的条目，看起来是这样的
  `10ddac0         17 t github.com/cockroachdb/cockroach/pkg/base.(*ClusterIDContainer).Unlock`
-- cgo条目编译通过C
+- cgo条目编译通过C/C++，或者go的程序中有引入了外部的
 
 
 
