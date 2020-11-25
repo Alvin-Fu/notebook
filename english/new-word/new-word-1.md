@@ -9,4 +9,4 @@
 |particular|特殊的， 特别的，详细，独有的||
 |represent|代表，表现，描绘，回忆，再赠送||
 |suitable|适当的，相配的||
-|symbol|||
+|symbol|符号，象征，标志||
