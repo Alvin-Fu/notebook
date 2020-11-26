@@ -45,7 +45,7 @@
      8ce580        123 t encoding/json.floatEncoder.encode-fm
      73aed0         82 t runtime.gcMarkDone.func1.1
 ```
-我反复的扩展一个简单地正则表达式使得可以正确的分解go二进制中的各种名称。结果正则表达很粗糙可以被找到。[结果](https://github.com/knz/go-binsize-viz/blob/d9d15ccf1569747ac4f2ff643a56954c793ce56c/tab2pydic.py#L119-L184)
+我反复的扩展一个简单地正则表达式使得可以正确的分解go二进制中的各种名称。结果正则表达很复杂可以被找到。[结果](https://github.com/knz/go-binsize-viz/blob/d9d15ccf1569747ac4f2ff643a56954c793ce56c/tab2pydic.py#L119-L184)
 对于上面的例子我的程序生成了下面的东西：
 |大小|路径|名字|
 |-|-|-|
@@ -66,7 +66,7 @@
  5b8c5c         34 t rocksdb::PosixRandomRWFile::Sync() [clone .cold.88]
 265a740        211 T google::protobuf::internal::LogMessage::operator<<(long)
 ```
-使用相同的方法，我使用一个简单的正则表达式来迭代的分解遇到的多样的符号。我甚至跟进一步，选择在下划线边界处分解标识符。结果这个正则表达式相当的复杂
+使用相同的方法，我使用一个简单的正则表达式来迭代的分解遇到的多样的符号。我甚至跟进一步，选择在下划线边界处分解标识符。结果这个正则表达式相当的复杂，
 
 
 
