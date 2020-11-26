@@ -74,7 +74,7 @@
 |100|['rocksdb::', 'JSONWriter::']|	void AddValue<int>(int const&)|
 |71|['rocksdb::', '(anonymous namespace)::', 'PosixEnv::']|NowNanos()|
 |231|['rocksdb::', 'PosixRandomRWFile::']|Sync() [clone .cold.88]|
-|211|||
+|211|['google::', 'protobuf::', 'internal::', 'LogMessage::']|operator<<(long)|
 
 
 
