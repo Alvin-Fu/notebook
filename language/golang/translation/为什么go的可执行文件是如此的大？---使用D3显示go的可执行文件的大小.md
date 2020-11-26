@@ -57,7 +57,17 @@
 |82|['runtime/', 'gcMarkDone.', 'func1.']|1|
 ### 分解C/C++的符号
 直觉告诉我一个C/C++的符号包含一个分层的命名空间的路径(e.g. std:: or google::protobuf::)或者一个变量或者方法的名字。
-看一看真实的二进制文件，可以发现很多不符合
+看一看真实的二进制文件，可以发现很多不符合这个简单模型的项：
+```
+37ee1d0          8 r $f64.c05eb8bf2d05ba25
+26abe20        100 T void rocksdb::JSONWriter::AddValue<int>(int const&)
+28388f0         71 t rocksdb::(anonymous namespace)::PosixEnv::NowNanos()
+2821ae0        231 T rocksdb::NumberToString[abi:cxx11](unsigned long)
+ 5b8c5c         34 t rocksdb::PosixRandomRWFile::Sync() [clone .cold.88]
+265a740        211 T google::protobuf::internal::LogMessage::operator<<(long)
+```
+
+
 
 
 
