@@ -75,7 +75,7 @@
 |71|['rocksdb::', '(anonymous namespace)::', 'PosixEnv::']|NowNanos()|
 |231|['rocksdb::', 'PosixRandomRWFile::']|Sync() [clone .cold.88]|
 |211|['google::', 'protobuf::', 'internal::', 'LogMessage::']|operator<<(long)|
-C++的
+C++的符号在类型中可以任意包含
 
 
 
