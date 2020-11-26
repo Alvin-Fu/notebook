@@ -51,7 +51,8 @@
 |-|-|-|
 |13|['crypto/', 'tls.', '.gobytes.']|1|
 |48|['compress/', 'flate.']|go.itab.*byLiteral,sort.Interface|
-|113|	['go.', '(*struct { io.Reader; io.Closer }).']||
+|113|	['go.', '(*struct { io.Reader; io.Closer }).']|Close|
+|10|['database/', 'sql.', 'glob..']|func1|
 
 
 
