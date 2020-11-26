@@ -67,7 +67,11 @@
 265a740        211 T google::protobuf::internal::LogMessage::operator<<(long)
 ```
 使用相同的方法，我使用一个简单的正则表达式来迭代的分解遇到的多样的符号。我甚至跟进一步，选择在下划线边界处分解标识符。结果这个正则表达式相当的复杂，[正则](https://github.com/knz/go-binsize-viz/blob/d9d15ccf1569747ac4f2ff643a56954c793ce56c/tab2pydic.py#L7-L117)
-为了上面的例子，我的
+为了上面的例子，我的生成的在下面：
+|大小|路径|名字|
+|-|-|-|
+|8|['$f64.']|content3|
+
 
 
 
