@@ -46,7 +46,11 @@
      73aed0         82 t runtime.gcMarkDone.func1.1
 ```
 我反复的扩展一个简单地正则表达式使得可以正确的分解go二进制中的各种名称。这个结果很粗糙可以被找到。[结果](https://github.com/knz/go-binsize-viz/blob/d9d15ccf1569747ac4f2ff643a56954c793ce56c/tab2pydic.py#L119-L184)
-对于上面的例子我的程序
+对于上面的例子我的程序生成了下面的东西：
+|column1|column2|column3|
+|-|-|-|
+|content1|content2|content3|
+
 
 
 
