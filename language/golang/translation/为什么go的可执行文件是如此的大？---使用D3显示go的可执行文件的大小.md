@@ -56,7 +56,8 @@
 |123|['encoding/', 'json.', 'floatEncoder.']|encode-fm|
 |82|['runtime/', 'gcMarkDone.', 'func1.']|1|
 ### 分解C/C++的符号
-直觉告诉我一个C/C++的符号包含一个分层的命名空间的路径
+直觉告诉我一个C/C++的符号包含一个分层的命名空间的路径(e.g. std:: or google::protobuf::)或者一个变量或者方法的名字。
+
 
 
 
