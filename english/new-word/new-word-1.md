@@ -11,4 +11,4 @@
 |suitable|适当的，相配的||
 |symbol|符号，象征，标志||
 | underscore|n 底线，下划线；vt 强调，划线于...之下||
-|satisfied|||
+|satisfied|使满意||
