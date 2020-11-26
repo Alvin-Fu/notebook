@@ -66,7 +66,7 @@
  5b8c5c         34 t rocksdb::PosixRandomRWFile::Sync() [clone .cold.88]
 265a740        211 T google::protobuf::internal::LogMessage::operator<<(long)
 ```
-
+使用相同的方法
 
 
 
