@@ -75,7 +75,7 @@
 |71|['rocksdb::', '(anonymous namespace)::', 'PosixEnv::']|NowNanos()|
 |231|['rocksdb::', 'PosixRandomRWFile::']|Sync() [clone .cold.88]|
 |211|['google::', 'protobuf::', 'internal::', 'LogMessage::']|operator<<(long)|
-C++的符号在类型中可以包含任意嵌套的模板参数或者括号，并且正则不能进行递归，使得
+C++的符号在类型中可以包含任意数量的嵌套模板参数或者括号，并且正则不能进行递归，使得产生了一些困难。
 
 
 
