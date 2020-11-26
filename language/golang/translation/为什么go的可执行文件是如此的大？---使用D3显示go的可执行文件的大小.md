@@ -36,7 +36,16 @@
 因此为了构建可视化树，我们需要将每个符号组件分解成名称组件，然后名称组件将这些符号分组为层次结构。
 ### 分解go的符号
 直觉告诉我一个go的符号应该包含一个带分层的包的路径(e.g. github.com/lib/pq)和一个包的名字。这个包名要不是一个全局的名字在包中(如. main)或者就是带有接收方类型前缀的方法名 (e.g. (*File).Write)。
-这个模型可以对大多数的符号进行精准描述并且可以很容易的使用一个正则表达式进行分解。但是很快我就发现了一些不符合这种模式的外来名字。
+这个模型可以对大多数的符号进行精准描述并且可以很容易的使用一个正则表达式进行分解。但是很快我就发现了一些不符合这种模式的外来名字：
+```
+5250978         13 d crypto/tls..gobytes.1
+3823b40         48 r go.itab.*compress/flate.byLiteral,sort.Interface
+     aa3740        113 t go.(*struct { io.Reader; io.Closer }).Close
+     e79cb0         10 t database/sql.glob..func1
+     8ce580        123 t encoding/json.floatEncoder.encode-fm
+     73aed0         82 t runtime.gcMarkDone.func1.1
+```
+
 
 
 
