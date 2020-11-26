@@ -50,7 +50,8 @@
 |大小|路径|名字|
 |-|-|-|
 |13|['crypto/', 'tls.', '.gobytes.']|1|
-|48|||
+|48|['compress/', 'flate.']|go.itab.*byLiteral,sort.Interface|
+|113|	['go.', '(*struct { io.Reader; io.Closer }).']||
 
 
 
