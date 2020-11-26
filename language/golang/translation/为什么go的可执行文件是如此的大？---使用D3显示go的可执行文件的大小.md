@@ -70,7 +70,9 @@
 为了上面的例子，我的生成的在下面：
 |大小|路径|名字|
 |-|-|-|
-|8|['$f64.']|content3|
+|8|['$f64.']|c05eb8bf2d05ba25|
+|100|['rocksdb::', 'JSONWriter::']|	void AddValue<int>(int const&)|
+
 
 
 
