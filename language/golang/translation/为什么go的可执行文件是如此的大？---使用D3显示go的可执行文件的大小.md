@@ -169,7 +169,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 |包名|大小|
 |-|-|
 |runtime|900k/71%|
-|main||
+|main|80k/6.3%|
+|unicode|77k|
 
 
 
