@@ -166,7 +166,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 ![title](../../../.local/static/2020/10/6/hello-c.1606573016186.png)
 ### 第一印象
 这个小程序包含了6行代码并且编译成了一个1.3MB的二进制文件。这个大小的分布如下：
-|column1|column2|
+|包名|大小|
 |-|-|
 |content1|content2|
 
