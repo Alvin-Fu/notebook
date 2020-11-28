@@ -179,6 +179,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 |syscall|6k/0.5%|
 |others|remainder|
 除了从源代码中编译的，还有24k(1.9%)是编译产生的类型相等和散列函数。这些都在树图的TYPEBOX框中累计。
+看下面的内容就很快清楚了：
 
 
 
