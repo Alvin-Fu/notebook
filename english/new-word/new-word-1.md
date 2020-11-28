@@ -14,4 +14,5 @@
 |satisfied|使满意||
 |internally |内部的，内在的，国内的||
 |attaches|n. 连接物，附件 v. 附加，系上，使归属||
+|layout|布局，设计，||
 
