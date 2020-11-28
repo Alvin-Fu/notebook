@@ -117,7 +117,15 @@ D3树始创于 Mike Bostok，然后被Jahnichen Jacques和Guglielmo Celata进行
 ### 例子程序
 我们将使用下面的代码：
 ```golang
+package main
 
+import "fmt"
+
+var x = struct { x [10000]int }{}
+
+func main() {
+        fmt.Println("hello world", x)
+}
 ```
 
 
