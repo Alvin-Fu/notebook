@@ -160,7 +160,7 @@ $ python3 simplify.py hellodic.py   >hello.js
   </body>
 </html>
 ```
-看下面的渲染效果
+看下面的渲染效果(确保启用了JavaScript)
 
 
 
