@@ -174,6 +174,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 |reflect|72k/5.7%|
 |fmt|38K/3.0%|
 |strconv|31k/2.5%|
+|sync|10k/0.8%|
+|internal||
 
 
 
