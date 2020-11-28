@@ -178,7 +178,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 |internal|9k/0.7%|
 |syscall|6k/0.5%|
 |others|remainder|
-除了从源代码中编译的，还有24k(1.9%)是编译产生的相同
+除了从源代码中编译的，还有24k(1.9%)是编译产生的类型
 
 
 
