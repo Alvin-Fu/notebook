@@ -134,6 +134,11 @@ go build hello.go
 ```
 ### 转换过程
 我们使用下面的命令：
+```shell
+$ go tool nm -size hello            >hello.symtab
+$ python3 tab2pydic.py hello.symtab >hellodic.py
+$ python3 simplify.py hellodic.py   >hello.js
+```
 
 
 
