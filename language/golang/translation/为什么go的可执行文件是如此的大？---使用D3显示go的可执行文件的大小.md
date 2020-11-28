@@ -105,7 +105,7 @@ C++的符号在类型中可以包含任意数量的嵌套模板参数或者括�
 ### 使用D3
 D3树始创于 Mike Bostok，然后被Jahnichen Jacques和Guglielmo Celata进行改进示例如下：
 1. 在HTML实体中创建一个SVG画布；
-2. 有默认的显示方法，
+2. 有定义了显示方法，给予一个计算
 
 
 
