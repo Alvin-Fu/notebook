@@ -168,7 +168,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 这个小程序包含了6行代码并且编译成了一个1.3MB的二进制文件。这个大小的分布如下：
 |包名|大小|
 |-|-|
-|content1|content2|
+|runtime|900k/71%|
+|main||
 
 
 
