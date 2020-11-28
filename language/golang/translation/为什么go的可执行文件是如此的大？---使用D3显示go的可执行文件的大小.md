@@ -140,6 +140,10 @@ $ python3 tab2pydic.py hello.symtab >hellodic.py
 $ python3 simplify.py hellodic.py   >hello.js
 ```
 ### 可视化
+一下的html已经足够了：
+```html
+
+```
 
 
 
