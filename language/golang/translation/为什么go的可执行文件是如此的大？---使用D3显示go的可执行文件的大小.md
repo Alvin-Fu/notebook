@@ -162,7 +162,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 ```
 看下面的渲染效果(确保启用了JavaScript)
 
-
+尽管这个简单的可执行文件仅仅包含了GO的符号
 
 
 
