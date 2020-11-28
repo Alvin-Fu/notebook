@@ -132,6 +132,8 @@ func main() {
 ```shell
 go build hello.go
 ```
+### 转换过程
+我们使用下面的命令：
 
 
 
