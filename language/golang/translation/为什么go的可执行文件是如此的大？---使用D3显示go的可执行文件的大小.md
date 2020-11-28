@@ -139,6 +139,8 @@ $ go tool nm -size hello            >hello.symtab
 $ python3 tab2pydic.py hello.symtab >hellodic.py
 $ python3 simplify.py hellodic.py   >hello.js
 ```
+### 可视化
+
 
 
 
