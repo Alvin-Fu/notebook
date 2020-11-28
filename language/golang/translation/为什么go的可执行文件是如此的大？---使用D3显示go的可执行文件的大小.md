@@ -170,7 +170,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 |-|-|
 |runtime|900k/71%|
 |main|80k/6.3%|
-|unicode|77k|
+|unicode|77k/6.1%|
+|reflect|72k/5.7%|
 
 
 
