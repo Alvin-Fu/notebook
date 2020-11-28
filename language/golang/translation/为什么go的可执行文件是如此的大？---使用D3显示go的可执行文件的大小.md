@@ -127,7 +127,7 @@ func main() {
         fmt.Println("hello world", x)
 }
 ```
-我选择使用
+我选择使用一个大的结构体
 
 
 
