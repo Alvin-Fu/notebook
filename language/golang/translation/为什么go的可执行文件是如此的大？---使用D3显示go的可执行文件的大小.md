@@ -208,6 +208,10 @@ $ python3 simplify.py hellodic.py   >hello.js
 同时，pcltab增加7.9M到26M是有增加了230%。
 ## runtime.pcltab是什么呢？
 他不是很好的记录，但是从go源码中的注释暗示了这个的目的
+```
+
+```
+
 
 
 
