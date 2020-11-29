@@ -199,7 +199,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 稍后我们将回到这个对象。
 ### CockroachDB的版本比较
 上面的可视化使用的是V19.1版本。作为参考，这里使用v1.0版本：
-- 总的条目为32
+- 总的条目为32MB
+- C/C++的条目是2.5M()
 
 
 
