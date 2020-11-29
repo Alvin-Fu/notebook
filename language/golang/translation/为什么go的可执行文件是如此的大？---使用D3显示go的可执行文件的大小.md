@@ -205,7 +205,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 	- CockroachDB和他的依赖是16M(50%)
 	- runtime包是7.9M(25%),其中7.3MB(23%)直接来自pcltab
 回想最初的问题，CockroachDB大约增加了40%的源代码v1.0到v19.1。感谢这个可视化，我们观察到这个直接来自CockroachDB的编译代码的增加16M到32M增加了一倍。
-同时，pcltab
+同时，pcltab增加7.9M到26M是有增加了230%。
+
 
 
 
