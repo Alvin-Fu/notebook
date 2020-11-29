@@ -189,7 +189,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 在最近构建的CockroachDB中运用这个工具，可以发现下面的：
 ### 分析
 通过探索这个图，我发现：
-- 总的
+- 总的条目是71MB
+- C/C++的
 
 
 
