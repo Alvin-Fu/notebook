@@ -186,7 +186,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 我们将在下面回答这个问题。
 ## CockroachDB的可执行文件包含什么？
 ### 可视化探究
-在最近构建的CockroachDB中运用这个工具，可以发现下面
+在最近构建的CockroachDB中运用这个工具，可以发现下面的：
+
 
 
 
