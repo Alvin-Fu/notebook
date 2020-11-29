@@ -212,7 +212,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 LineTable是一种将程序计数器映射到行号的数据结构。
 ```
 这个数据结构的目的能够使得go的运行时系统在崩溃时或者调用内部通过runtime.GetStack可以生成栈的追踪描述。
-这个似乎是有用的。但是为什么这么大呢
+这个似乎是有用的。但是为什么这么大呢？
 
 
 
