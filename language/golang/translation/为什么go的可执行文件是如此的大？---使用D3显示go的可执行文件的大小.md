@@ -209,7 +209,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 ## runtime.pcltab是什么呢？
 他不是很好的记录，但是从go源码中的注释暗示了这个的目的
 ```
-LineTab
+LineTable
 ```
 
 
