@@ -194,7 +194,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 - 62M(88%)是GO的条目，包含：
 	- 32M(45%)是直接来自CockroachDB的代码和他的依赖
 	- 26M(36%)来自runtime包
-通过上面的例子，他的runtime是900K
+通过上面的例子，他的runtime是900K。现在这个是26MB有增大了28倍。
 
 
 
