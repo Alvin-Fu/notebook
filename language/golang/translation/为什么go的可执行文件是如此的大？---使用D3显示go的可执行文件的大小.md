@@ -207,7 +207,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 回想最初的问题，CockroachDB大约增加了40%的源代码v1.0到v19.1。感谢这个可视化，我们观察到这个直接来自CockroachDB的编译代码的增加16M到32M增加了一倍。
 同时，pcltab增加7.9M到26M是有增加了230%。
 ## runtime.pcltab是什么呢？
-他不是很好的记录，但是从go源码中的注释
+他不是很好的记录，但是从go源码中的注释暗示了这个
 
 
 
