@@ -211,7 +211,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 ```
 LineTable是一种将程序计数器映射到行号的数据结构。
 ```
-这个数据结构的目的能够使得go的运行时系统
+这个数据结构的目的能够使得go的运行时系统在崩溃是生成
 
 
 
