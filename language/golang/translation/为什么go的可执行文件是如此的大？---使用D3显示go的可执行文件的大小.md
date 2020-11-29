@@ -183,7 +183,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 - go的标准库没有很好的模块化；仅仅导入了一个方法(fmt.Println)就拉了大约300k的代码
 - 甚至对于fmt.Println和他的依赖以及主程序的80K可预测，我们对有900k(71%)的代码来自runtime包是感到疑惑的。
 - 通过缩放我们有看到450K(35%)是被一个名为runtime.pclntab单独的条目占用。这个是超过了主程序和为了fmt.Println的支持代码的总和。
-
+我们将在下面回答这个问题。
+## 
 
 
 
