@@ -181,7 +181,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 除了从源代码中编译的，还有24k(1.9%)是编译产生的类型相等和散列函数。这些都在树图的TYPEBOX框中累计。
 看下面的内容就很快清楚了：
 - go的标准库没有很好的模块化；仅仅导入了一个方法(fmt.Println)就拉了大约300k的代码
-- 
+- 甚至对于fmt.Println和他的依赖
 
 
 
