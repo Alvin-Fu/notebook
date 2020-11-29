@@ -192,7 +192,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 - 总的条目是71MB
 - C/C++的条目占8.4MB(12%),其中包含3M(4.3%）来自RocksDB
 - 62M(88%)是GO的条目，包含：
-	- 32M(45%)是直接来自
+	- 32M(45%)是直接来自CockroachDB的代码和他的依赖
+	- 26M(36%)来自runtime
 
 
 
