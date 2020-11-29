@@ -198,6 +198,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 放大后谜底揭开了：所有的增加的都进入了一个单一对象runtime.pclntab。其他的条目在runtime包中没有显示出不同在两个程序之间。
 稍后我们将回到这个对象。
 ### CockroachDB的版本比较
+上面的可视化使用的是V19.1
 
 
 
