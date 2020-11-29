@@ -196,6 +196,8 @@ $ python3 simplify.py hellodic.py   >hello.js
 	- 26M(36%)来自runtime包
 通过上面的例子，他的runtime是900K。现在这个是26MB有增大了28倍。到底发生了什么？
 放大后谜底揭开了：所有的增加的都进入了一个单一对象runtime.pclntab。其他的条目在runtime包中没有显示出不同在两个程序之间。
+稍后我们将回到这个对象。
+##
 
 
 
