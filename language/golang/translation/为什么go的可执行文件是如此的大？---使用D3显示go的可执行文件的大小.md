@@ -195,7 +195,7 @@ $ python3 simplify.py hellodic.py   >hello.js
 	- 32M(45%)是直接来自CockroachDB的代码和他的依赖
 	- 26M(36%)来自runtime包
 通过上面的例子，他的runtime是900K。现在这个是26MB有增大了28倍。到底发生了什么？
-放大后谜底揭开了：所有的增加的都进入了一个单一对象runtime.pclntab。
+放大后谜底揭开了：所有的增加的都进入了一个单一对象runtime.pclntab。其他的条目在
 
 
 
