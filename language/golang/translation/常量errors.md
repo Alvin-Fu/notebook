@@ -27,6 +27,7 @@ type Error string
 
 func (e Error) Error() string { return string(e) }
 ```
+看起来和强大的相似的
 
 
 
