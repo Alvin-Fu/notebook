@@ -37,6 +37,7 @@ const err2 = errorString{"EOF"} // const initializer errorString literal is not 
 const err = Error("EOF") 
 err = Error("not EOF") // error, cannot assign to err
 ```
+此外，
 
 
 
