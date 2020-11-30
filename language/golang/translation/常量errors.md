@@ -18,7 +18,7 @@ fmt.Println(x == io.EOF)      // false
 err := errors.New("EOF")   // io/io.go line 38
 fmt.Println(io.EOF == err) // false
 ```
-结合这些属性，你就会产生一系列奇怪的行为，这些来自有
+结合这些属性，你就会产生一系列奇怪的行为，这些来自于go的哨兵错误的值
 
 
 
