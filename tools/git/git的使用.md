@@ -11,11 +11,12 @@ git checkout -- 文件名 将指定的文件回滚到前一个版本
 	1. rm -rf 子模块目录  `删除子模块的目录及源码`
 	2. vim .gitmodules   `删除文件中子模块相关的条目`
 	3. vim .git/config   `删除配置项中子模块相关条目`
-	4. rm .git/module/*  `删除module目录中的子模块对应的目录，不要删除别的哟`
+	4. rm .git/module/*  `删除module目录中的子模块对应entos
+	5. 的目录，不要删除别的哟`
 在做完上面的4个步骤后,可能会出现的问题：
 在使用git submodule的命令时会出现
 ```
-$ git submodule
+$ git submodulec
 fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alvin-Fu/testmod'
 出现这个很有可能是因为git中的修改没有提交，在提交以后就会消失
 ```
