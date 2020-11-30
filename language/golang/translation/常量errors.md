@@ -32,7 +32,7 @@ func (e Error) Error() string { return string(e) }
 const err = Error("EOF") 
 const err2 = errorString{"EOF"} // const initializer errorString literal is not a constant
 ```
-这个常量类型的err是不
+这个err类型的常量是
 
 
 
