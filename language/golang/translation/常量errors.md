@@ -15,9 +15,10 @@ fmt.Println(x == io.EOF)      // false
 ```
 第二个问题是io.EOF表现的像一个单例，不是一个常量。即使我们按照io包使用的方式去创建我们自己的EOF的值，他们也是不相等的。
 ```go
-
-
+err := errors.New("EOF")   // io/io.go line 38
+fmt.Println(io.EOF == err) // false
 ```
+
 
 
 
