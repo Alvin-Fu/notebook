@@ -20,7 +20,7 @@ fmt.Println(io.EOF == err) // false
 ```
 结合这些属性，就会产生一系列奇怪的行为，这些实际来自于go的哨兵错误的值，那些错误通常通过errors.New或者fmt.Errorf创建他们不是常量。
 ### 常量err
-在我介绍我的解决方案之前，让我们回顾一下go的err接口是怎么工作的。
+在我介绍我的解决方案之前，让我们回顾一下go的err接口是怎么工作的。任何一个类型实现了Error()stringde
 
 
 
