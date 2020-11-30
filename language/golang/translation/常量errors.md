@@ -27,7 +27,7 @@ type Error string
 
 func (e Error) Error() string { return string(e) }
 ```
-看起来和强大的errors.New实现errors.errorString是相似的。但是和errors.errorString
+看起来和强大的errors.New实现errors.errorString是相似的。但是和errors.errorString不一样的是这个是一个常量表达式。
 
 
 
