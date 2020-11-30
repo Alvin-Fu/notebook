@@ -14,6 +14,10 @@ fmt.Println(io.EOF == io.EOF) // true
 fmt.Println(x == io.EOF)      // false
 ```
 
+
+
+
+
 ## 深入阅读
 [go err的突围](https://www.mdeditor.tw/pl/pml6)
 
