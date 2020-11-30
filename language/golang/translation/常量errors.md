@@ -37,7 +37,13 @@ const err2 = errorString{"EOF"} // const initializer errorString literal is not 
 const err = Error("EOF") 
 err = Error("not EOF") // error, cannot assign to err
 ```
-此外，如果两个常量字符串的内容是一样的那么他们总是相等的。
+此外，如果两个常量字符串的内容是一样的那么他们总是相等的，也意味着两个内容相等的Error也是相等的。
+```go
+const err = Error("EOF") 
+fmt.Println(err == Error("EOF")) // true
+```
+
+
 
 
 
