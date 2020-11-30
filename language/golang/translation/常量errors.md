@@ -13,7 +13,7 @@ io.EOF = fmt.Errorf("whoops")
 fmt.Println(io.EOF == io.EOF) // true
 fmt.Println(x == io.EOF)      // false
 ```
-第二个问题是io.EOF表现的像一个单例，不是一个常量。
+第二个问题是io.EOF表现的像一个单例，不是一个常量。即使我们
 
 
 
