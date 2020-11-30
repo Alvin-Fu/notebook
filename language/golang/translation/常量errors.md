@@ -42,7 +42,7 @@ err = Error("not EOF") // error, cannot assign to err
 const err = Error("EOF") 
 fmt.Println(err == Error("EOF")) // true
 ```
-也就是说，相等的Error的值是相同的，
+换句话说，相等的Error的值是相同的，也就是说
 
 
 
