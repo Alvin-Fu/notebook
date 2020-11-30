@@ -44,8 +44,21 @@ fmt.Println(err == Error("EOF")) // true
 ```
 换句话说，相等的Error的值是相同的，也就是说常数1和另一个常数1是相同的。
 ```go
+const eof = Error("eof")
 
+type Reader struct{}
+
+func (r *Reader) Read([]byte) (int, error) {
+        return 0, eof
+}
+
+func main() {
+        var r Reader
+        _, err := r.Read([]byte{})
+        fmt.Println(err == eof) // true
+}
 ```
+我们可以改变io.EOF
 
 
 
