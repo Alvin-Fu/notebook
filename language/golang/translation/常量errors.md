@@ -58,7 +58,7 @@ func main() {
         fmt.Println(err == eof) // true
 }
 ```
-我们可以改变io.EOF让它变成常数吗？
+我们可以改变io.EOF让它变成常数吗？事实证明他是可以
 
 
 
