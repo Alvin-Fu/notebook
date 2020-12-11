@@ -18,5 +18,6 @@
 |renders|n. 渲染，粉刷 v. 提出，放弃，报答||
 |inflection point|拐点||
 | In addition to|除...之外||
+|lookup |查找||
 
 
