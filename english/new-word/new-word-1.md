@@ -20,6 +20,7 @@
 | In addition to|除...之外||
 |lookup |查找||
 |derivation|起源，派生，推导||
+|and so on|等等，诸如此类||
 
 
 
