@@ -14,8 +14,30 @@ pc-value表是有很多有趣的用法。最明显的是映射程序计数器到
 `N pc0 func0 pc1 func1 pc2 func2 ... pc(N-1) func(N-1) pcN`
 这个表是一个N的计数，后面是一个交替的pc，函数的元数据指针值得列表。去找到一个给定程序计数器的函数，运行时对pc值进行二分搜索。最终pcN的值就是func(N-1)后面的地址，因此二分查找可以区分出来一个func(N-1)内部的pc和文本段外部的pc。
 每一个funcN值是一个从函数符号表开始到下面这个结构的指针偏移量：
-```go
+```C
+ struct        Func
 
+        {
+
+                uintptr        entry;  // start pc
+
+                int32 name;         // name (offset to C string)
+
+                int32 args;         // size of arguments passed to function
+
+                int32 frame;        // size of function frame, including saved caller PC
+
+                int32        pcsp;                // pcsp table (offset to pcvalue table)
+
+                int32        pcfile;          // pcfile table (offset to pcvalue table)
+
+                int32        pcln;                  // pcln table (offset to pcvalue table)
+
+                int32        nfuncdata;          // number of entries in funcdata list
+
+                int32        npcdata;          // number of entries in pcdata list
+
+        };
 ```
 
 
