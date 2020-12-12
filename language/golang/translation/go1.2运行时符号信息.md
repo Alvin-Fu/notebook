@@ -1,5 +1,6 @@
 [原文地址](https://docs.google.com/document/d/1lyPIbmsYbXnpNj57a261hgOYVpNRcgydurVQIyZOz_o/pub)
 funcdata 函数数据
+pseudo-instruction 伪指令
 # go1.2运行时符号信息
 ## 摘要
 在go1.2中将支持新的运行时符号。这个是内部的改变，不对用户可见的，但是他们删除了一些不稳定的代码，减少内存占用，使得gc的实现更加的简单。
