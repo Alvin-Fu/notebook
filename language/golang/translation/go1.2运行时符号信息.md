@@ -67,7 +67,7 @@ pcfile pc-value表在云文件名表中生成索引。表的格式如下：
 … and then data referred to by offset, in an unspecified order …
 ```
 这个符号(N)表n字节的主机字节序值。在32位系统中这个8字节字段将变成4字节字段。
-将
+将所有的内存连续放置并将其分配给
 
 
 
