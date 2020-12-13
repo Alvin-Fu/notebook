@@ -50,7 +50,7 @@ updata的int32在内存中是紧跟着func结构，给pcdata表提供偏移量�
 pcfile pc-value表在云文件名表中生成索引。表的格式如下：
 `  N+1 name1 name2 name3 … nameN`
 其中N+1是一个int32并且每一个nameX是一个int32偏移量到C字符串。偏移量相对于表的开始。没有name0。
-
+函数符号表，
 
 
 
