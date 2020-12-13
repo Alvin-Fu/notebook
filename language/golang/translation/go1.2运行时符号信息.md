@@ -47,7 +47,9 @@ pc-value表是有很多有趣的用法。最明显的是映射程序计数器到
 相似的这个伪指令声明索引3与程序计数器相关联的值是45` PCDATA $3, $45`。每一个pcdata索引编码到一个单独的pc-value表(PCDATA $1, PCDATA $2, 等等)。就像funcdata，索引允许一个给定的函数定义多种pcdata，并且这些索引也将有一个注册表。
 在运行时，运行时可以从一个FUNC中给定程序计数器处检索具有给定索引的funcdata或者给定索引的pcdata。一个pcdata流可以产生一个int32型引用相应的数据检索作为一个funcdata指针。
 updata的int32在内存中是紧跟着func结构，给pcdata表提供偏移量；如果nfuncdata>0，在npcdata int32紧跟着可能的int32间隙为了对齐并且nfuncdata uintptrs给出funcdata的值。如果pcsp、pcfile、pcln或者任何的pcdata偏移量是0，那么这个表示错误的并且所有的pc值都取-1。
-pcfile pc-value表在云文件名表中生成索引
+pcfile pc-value表在云文件名表中生成索引。表的格式如下：
+`  N+1 name1 name2 name3 … nameN`
+
 
 
 
