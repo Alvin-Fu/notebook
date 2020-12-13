@@ -66,6 +66,7 @@ pcfile pc-value表在云文件名表中生成索引。表的格式如下：
 [4] int32 offset from start to source file table
 … and then data referred to by offset, in an unspecified order …
 ```
+这个符号(N)
 
 
 
