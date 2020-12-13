@@ -49,7 +49,8 @@ pc-value表是有很多有趣的用法。最明显的是映射程序计数器到
 updata的int32在内存中是紧跟着func结构，给pcdata表提供偏移量；如果nfuncdata>0，在npcdata int32紧跟着可能的int32间隙为了对齐并且nfuncdata uintptrs给出funcdata的值。如果pcsp、pcfile、pcln或者任何的pcdata偏移量是0，那么这个表示错误的并且所有的pc值都取-1。
 pcfile pc-value表在云文件名表中生成索引。表的格式如下：
 `  N+1 name1 name2 name3 … nameN`
-其中N+1是一个int32并且每一个nameX是一个int32偏移量到C字符串。偏移量
+其中N+1是一个int32并且每一个nameX是一个int32偏移量到C字符串。偏移量相对于表的开始。没有name0。
+
 
 
 
