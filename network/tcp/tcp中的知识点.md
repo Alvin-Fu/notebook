@@ -1,4 +1,10 @@
 ## 1、三次握手
+### 服务端直接RST的真相
+内核中处理TCP连接时维护两个队列SYN队列和accept队列，服务端在建立连接过程中内核的处理过程如下：
+- 客户端使用connect调用向服务端发起TCP连接，内核将此连接信息放入SYN队列，返回SYN-ACK
+- 服务端内核收到客户端的ACK后，将此连接从SYN对列中取出，放入ACCEPT队列
+- 服务端使用accept调用将连接从ACCEPT队列取出
+`查看SYN队列： cat /proc/sys/net/ipv4/tcp_max_syn_backlog`
 
 ## 2、四次挥手
 知识点：
