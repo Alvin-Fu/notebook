@@ -5,6 +5,8 @@
 - 服务端内核收到客户端的ACK后，将此连接从SYN对列中取出，放入ACCEPT队列
 - 服务端使用accept调用将连接从ACCEPT队列取出
 `查看SYN队列： cat /proc/sys/net/ipv4/tcp_max_syn_backlog`
+[RST详细信息](https://github.com/Alvin-Fu/notebook/blob/master/system/linux%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/tcpdump%E5%92%8Cwireshark%E7%9A%84%E4%BD%BF%E7%94%A8.md)
+
 
 ## 2、四次挥手
 知识点：
