@@ -235,6 +235,32 @@ type: float64
 */
 从结果可以看出来赋值的时候使用的是int，在解码的时候就变成了浮点型了
 ```
+## 结构体中匿名字段
+```go
+package main
+
+import (
+    "encoding/json"
+    "fmt"
+    "time"
+)
+
+func main() {
+    t := struct {
+        time.Time
+        N int
+    }{
+        time.Date(2020, 12, 20, 0, 0, 0, 0, time.UTC),
+        5,
+    }
+
+    m, _ := json.Marshal(t)
+    fmt.Printf("%s", m)
+}
+//结果： "2020-12-20T00:00:00Z"
+```
+[运行代码查看结果](https://goplay.space/#ylPvSph0WKu)
+可以看到没有打印N等于5的值，这是由于marshal是使用第归去遍历值，当值实现了marshal的接口是就会使用这个接口，
 
 
 
