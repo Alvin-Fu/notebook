@@ -15,5 +15,5 @@ func main() {
         fmt.Println(a, b) // prints [0 0 0 0 0] [0 0 7 0 0]
 }
 ```
-
+这个表达式b:=a声明了
 
