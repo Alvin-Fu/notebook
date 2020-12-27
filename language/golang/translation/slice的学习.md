@@ -68,7 +68,19 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> a
 [1, 2, 0, 4, 5]
 ```
-在
+在ruby中也一样：
+```ruby
+irb(main):001:0> a = [1,2,3,4,5]
+=> [1, 2, 3, 4, 5]
+irb(main):002:0> b = a
+=> [1, 2, 3, 4, 5]
+irb(main):003:0> b[2] = 0
+=> 0
+irb(main):004:0> a
+=> [1, 2, 0, 4, 5]
+```
+
+
 
 
 
