@@ -56,7 +56,7 @@ func main() {
         fmt.Println(a) // prints [-1 -2 -3 -4 -5]
 }
 ```
-这个例子中是将a传递negate作为一个形参。negate中对s进行了遍历
+这个例子中是将a传递negate作为一个形参。negate中对s进行了遍历并对他们进行
 
 
 
