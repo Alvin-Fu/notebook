@@ -35,7 +35,7 @@ func main() {
         fmt.Println(a, b) // prints [1 2 0 4 5] [0 4 5]
 }
 ```
-
+在上面的例子a和b共享
 
 
 
