@@ -57,7 +57,19 @@ func main() {
 }
 ```
 这个例子中是将a传递negate作为一个形参。negate中对s进行了遍历并对他们进行取反。虽然这个negate没有返回值，或者有任何的方法去访问main中的a变量，但是a的内容被negate改变了。
-大多数的程序员对于go切片的底层数组有直观的了解，因为这类概念在其他语言中也有。例如第一个
+大多数的程序员对于go切片的底层数组有直观的了解，因为这类概念在其他语言中也有。例如第一个例子使用的python
+```python
+Python 2.7.10 (default, Feb  7 2017, 00:08:15) 
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.34)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = [1,2,3,4,5]
+>>> b = a
+>>> b[2] = 0
+>>> a
+[1, 2, 0, 4, 5]
+```
+
+
 
 
 
