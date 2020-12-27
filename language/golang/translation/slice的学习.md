@@ -39,6 +39,23 @@ func main() {
 ```
 在上面的例子a和b共享相同的底层数组尽管b开始是在不同的数组下标和不同的长度。改变b的底层数组对于a是可见的。
 **例2 切片做为函数参数**
+```go
+package main
+
+import "fmt"
+
+func negate(s []int) {
+        for i := range s {
+                s[i] = -s[i]
+        }
+}
+
+func main() {
+        var a = []int{1, 2, 3, 4, 5}
+        negate(a)
+        fmt.Println(a) // prints [-1 -2 -3 -4 -5]
+}
+```
 
 
 
