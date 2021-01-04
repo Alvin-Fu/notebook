@@ -83,6 +83,16 @@ irb(main):004:0> a
 同样适用于大多数将数组视为对象或者引用类型的语言。
 ## 切片的头
 切片既表现为值又表现为指针的神奇之处实际在于理解切片实际是一个结构体。想要理解这个需要看到切片的底层结构。
+```go
+package runtime
+
+type slice struct {
+        ptr   unsafe.Pointer
+        len   int
+        cap   int
+}
+```
+
 
 
 
