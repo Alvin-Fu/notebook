@@ -92,7 +92,7 @@ type slice struct {
         cap   int
 }
 ```
-
+![title](../../../.local/static/2021/0/1/slice.001.1609770164781.png)
 
 
 
