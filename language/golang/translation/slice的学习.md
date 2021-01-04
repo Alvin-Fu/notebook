@@ -93,7 +93,7 @@ type slice struct {
 }
 ```
 ![title](../../../.local/static/2021/0/1/slice.001.1609770164781.png)
-这块是很重要的，因为不像
+这块是很重要的，因为不像map和chan类型切片是值类型并且在
 
 
 
