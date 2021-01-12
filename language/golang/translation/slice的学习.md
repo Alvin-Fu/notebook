@@ -95,6 +95,23 @@ type slice struct {
 ![title](../../../.local/static/2021/0/1/slice.001.1609770164781.png)
 这块是很重要的，因为不像map和chan是引用类型，切片是值类型并且在赋值或者作为参数传递给函数是进行拷贝的。
 举例说明，程序员直观的理解square的形式参数v是main中声明的变量v的拷贝。
+```go
+package main
+
+import "fmt"
+
+func square(v int) {
+        v = v * v
+}
+
+func main() {
+        v := 3
+        square(v)
+        fmt.Println(v) // prints 3, not 9
+}
+```
+
+
 
 
 
