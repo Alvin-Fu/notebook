@@ -126,6 +126,7 @@ func main() {
         fmt.Println(s, len(s)) // prints [1 2 3] 3
 } 
 ```
+go的切片变量有些不同寻常，他是通过
 
 
 
