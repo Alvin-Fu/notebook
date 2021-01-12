@@ -110,7 +110,7 @@ func main() {
         fmt.Println(v) // prints 3, not 9
 }
 ```
-因此square中对于v的操作是不会影响到main中的v。同样的double的形参s是一个值
+因此square中对于v的操作是不会影响到main中的v。同样的double的形参s是来自于main中的s的值拷贝
 
 
 
