@@ -111,6 +111,21 @@ func main() {
 }
 ```
 因此square中对于v的操作是不会影响到main中的v。同样的double的形参s是来自于main中的s的值拷贝，不是main中s的指针。
+```go
+package main
+
+import "fmt"
+
+func double(s []int) {
+        s = append(s, s...)
+}
+
+func main() {
+        s := []int{1, 2, 3}
+        double(s)
+        fmt.Println(s, len(s)) // prints [1 2 3] 3
+}
+```
 
 
 
