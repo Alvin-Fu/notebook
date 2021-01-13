@@ -131,7 +131,22 @@ go的切片变量有些不同寻常，他是通过值传递而不是指针。90%
 ## 总结
 我以一个将切片作为堆栈的例子来总结这篇文章：
 ```go
+package main
 
+import "fmt"
+
+func f(s []string, level int) {
+        if level > 5 {
+               return
+        }
+        s = append(s, fmt.Sprint(level))
+        f(s, level+1)
+        fmt.Println("level:", level, "slice:", s)
+}
+
+func main() {
+        f(nil, 0)
+}
 ```
 
 
