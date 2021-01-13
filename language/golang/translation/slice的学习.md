@@ -148,7 +148,7 @@ func main() {
         f(nil, 0)
 }
 ```
-开始main是传递给f了一个
+开始main是传递给f了一个nil切片和level为0。
 
 
 
