@@ -148,7 +148,17 @@ func main() {
         f(nil, 0)
 }
 ```
-开始main是传递给f了一个nil切片和level为0。在f的内部我们会将当前的level的值append到s中并将level递增，并对f进行递归。一旦level超过5，对f的调用返回
+开始main是传递给f了一个nil切片和level为0。在f的内部我们会将当前的level的值append到s中并将level递增，并对f进行递归。一旦level超过5，对f的调用返回，打印他们当前的level和s的内容。
+
+```shell
+level: 5 slice: [0 1 2 3 4 5]
+level: 4 slice: [0 1 2 3 4]
+level: 3 slice: [0 1 2 3]
+level: 2 slice: [0 1 2]
+level: 1 slice: [0 1]
+level: 0 slice: [0]
+```
+
 
 
 
