@@ -148,7 +148,7 @@ func main() {
         f(nil, 0)
 }
 ```
-开始main是传递给f了一个nil切片和level为0。在f的内部我们会将当前的level的值append到s中并将level递增，并对f进行递归。
+开始main是传递给f了一个nil切片和level为0。在f的内部我们会将当前的level的值append到s中并将level递增，并对f进行递归。一旦level超过5，
 
 
 
