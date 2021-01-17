@@ -12,5 +12,5 @@ go的调度指的是goroutine的调度过程。和系统中的线程的调度有
 - 每个进程不能扩展到数百万个goroutine
 
 **M:N线程**
-M个内核线程执行N个goroutine，内核线程的创建都是很昂贵的，因此是
+M个内核线程执行N个goroutine，内核线程的创建都是很昂贵的，因此是让goroutine去内核线程上运行
 
