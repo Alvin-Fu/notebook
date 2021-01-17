@@ -16,7 +16,8 @@ M个内核线程执行N个goroutine，内核线程的创建都是很昂贵的，
 内核不知道当前goroutine的状态，需要有一个调度器根据goroutine状态进行调度。与内核线程的状态信息比起来goroutin的保存的很少了，这个使得goroutine的切换开销很小
 ```text
 - 正在运行(Running): 当前在内核线程上运行的goroutine
-- 可运行(Runnable): 等待
+- 可运行(Runnable): 等待内核线程来运行的goroutine
+- 
 ```
 
 
