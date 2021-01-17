@@ -15,7 +15,7 @@ go的调度指的是goroutine的调度过程。和系统中的线程的调度有
 M个内核线程执行N个goroutine，内核线程的创建都是很昂贵的，因此是让goroutine去内核线程上运行。内核线程我们是不能控制的，但是goroutine的是可以控制的并且开销很小的。
 内核不知道当前goroutine的状态，需要有一个调度器根据goroutine状态进行调度。与内核线程的状态信息比起来goroutin的保存的很少了，这个使得goroutine的切换开销很小
 ```text
-- 正在运行
+- 正在运行(Running)
 ```
 
 
