@@ -14,4 +14,5 @@ struct sdshdr{
 };
 buf中会保留一个字节用于结尾，当free等于0的时候length是实际的buf长度减一，free不等于0的时候length+free等于buf的长度
 ```
-## 
+## SDS和字符串的区别
+c语言中的
