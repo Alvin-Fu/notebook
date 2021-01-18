@@ -1,1 +1,2 @@
-# 
+# redis中的string结构
+redis中的string的应用是很广泛的
