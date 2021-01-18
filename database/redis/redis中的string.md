@@ -12,5 +12,6 @@ struct sdshdr{
     //buf数组
     char[] buf;
 };
-buf中会保留一个字节用于结尾，当free等于0的时候length是实际的buf长度减一，free不等于0的时候
+buf中会保留一个字节用于结尾，当free等于0的时候length是实际的buf长度减一，free不等于0的时候length+free等于buf的长度
 ```
+## 
