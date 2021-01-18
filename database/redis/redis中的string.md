@@ -12,5 +12,5 @@ struct sdshdr{
     //buf数组
     char[] buf;
 };
-buf中会保留一个
+buf中会保留一个字节用于结尾，
 ```
