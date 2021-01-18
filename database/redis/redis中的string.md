@@ -15,4 +15,4 @@ struct sdshdr{
 buf中会保留一个字节用于结尾，当free等于0的时候length是实际的buf长度减一，free不等于0的时候length+free等于buf的长度
 ```
 ## SDS和字符串的区别
-c语言中的
+c语言中的普通字符串不能满足redis的高效，安全，功能方面的需求
