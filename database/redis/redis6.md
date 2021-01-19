@@ -1,3 +1,3 @@
 # redis6
-redis6的、
+redis6的
  
