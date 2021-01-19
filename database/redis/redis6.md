@@ -1,1 +1,2 @@
-# redis6中
+# redis6
+redis6的
