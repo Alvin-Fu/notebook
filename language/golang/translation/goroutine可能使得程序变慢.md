@@ -26,7 +26,19 @@ func SerialSum() int {
 ```
 
 ## 并行版本 
+
  
 
 [原文](https://appliedgo.net/concurrencyslower/)
 [译文](https://mp.weixin.qq.com/s/aolQTL-VOvNqEicC95kYZw)
+
+
+
+
+
+
+
+
+
+
+
