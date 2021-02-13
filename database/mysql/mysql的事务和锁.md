@@ -28,6 +28,9 @@ mysql的事务隔离级别一共有四个，读未提交，读已提交，可重
 
 **发生的隔离级别**
 
+||column2|column3|
+|-|-|-|
+|content1|content2|content3|
 
 
 
