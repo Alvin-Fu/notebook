@@ -66,6 +66,7 @@ MySQL的默认隔离级别
 ### MVCC(多版本并发控制)
 
 ## 参考
+[搞懂事务隔离级别](https://developer.aliyun.com/article/743691)
 
 
 
