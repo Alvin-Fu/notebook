@@ -47,7 +47,7 @@ mysql的事务隔离级别一共有四个，读未提交，读已提交，可重
 ## 隔离级别
 ### 1、读未提交(Read uncommitted)
 ### 2、读提交(Read committed)
-### 3、
+### 3、重复读（Repeatable read）
 
 
 
