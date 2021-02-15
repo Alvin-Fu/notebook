@@ -72,7 +72,7 @@ MySQL的默认隔离级别
 ## 参考
 [搞懂事务隔离级别](https://developer.aliyun.com/article/743691)
 [快速理解脏读等](https://cloud.tencent.com/developer/article/1450773)
-
+[可重复读的实现](https://juejin.cn/post/6844904180440629262)
 
 
 
