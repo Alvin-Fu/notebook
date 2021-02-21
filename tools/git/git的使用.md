@@ -37,6 +37,7 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 也可以使用git reset --soft (commit id) 进行修改
 
 ## pull和fetch的区别
+
 **fetch：**将远程仓库的包含的所有分支的最新commit-id，将其记录到.git/FETCH_HEAD中
 
 ```text
@@ -46,7 +47,7 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 	git merge alvinfu(合并alvinfu分支到本地master分支)
 	git branch -d  alvinfu(如果不想保留alvinfu分支可以删除)
 ```
-****
+**pull：**
 
 
 
