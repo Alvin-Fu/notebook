@@ -41,7 +41,9 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 
 ```text
 步骤：
-	git fetch origin （获取最新版本）
+	git fetch origin master:alvinfu（获取最新版本）
+	git diff alvinfu（查看不同）
+	
 ```
 
 
