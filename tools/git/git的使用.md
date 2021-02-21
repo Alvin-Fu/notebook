@@ -48,6 +48,7 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 	git branch -d  alvinfu(如果不想保留alvinfu分支可以删除)
 ```
 **pull：**先比对本地的FETCH_HEAD和远端的commit-id，然后通过fetch获取，再利用merge进行合并
+可以认为pull是fetch和merge的合并
 
 
 
