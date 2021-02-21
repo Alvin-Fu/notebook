@@ -46,6 +46,7 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 	git merge alvinfu(合并alvinfu分支到本地master分支)
 	git branch -d  alvinfu(如果不想保留alvinfu分支可以删除)
 ```
+****
 
 
 
