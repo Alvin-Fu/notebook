@@ -36,3 +36,4 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 使用git commit --amend可以对上一次的进行修改
 也可以使用git reset --soft (commit id) 进行修改
 
+## pull和fetch的区别
