@@ -39,6 +39,12 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 ## pull和fetch的区别
 **fetch：**将远程仓库的包含的所有分支的最新commit-id，将其记录到.git/FETCH_HEAD中
 
+```text
+步骤：
+	git 
+```
+
+
 
 
 
