@@ -37,3 +37,22 @@ fatal: no submodule mapping found in .gitmodules for path 'vendor/github.com/Alv
 也可以使用git reset --soft (commit id) 进行修改
 
 ## pull和fetch的区别
+**fetch：**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
