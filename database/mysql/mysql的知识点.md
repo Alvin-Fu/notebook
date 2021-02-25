@@ -21,7 +21,7 @@ join表时应该注意的地方，join字段应该是建立了索引的，并且
 # Mysql查询时的点
 在查询时where后面的条件顺序对于查询是不影响的，因为在查询的时候mysql会自动将条件的顺序调整为适合于索引的顺序
 
-
+# like
 
 参考资料：
 [mysql的性能优化](https://www.cnblogs.com/pengyunjing/p/6591660.html )
