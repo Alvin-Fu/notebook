@@ -1,1 +1,1 @@
-[golang的编译器原理](https://mp.weixin.qq.com/s/VtRIEpUHn1vavT_FYkL86w)
+[golang的编译器原理](https://mp.weixin.qq.com/s?__biz=MzA4ODg0NDkzOA==&mid=2247487091&idx=1&sn=04ed91c97b683cac2b157a5ca33c7011&source=41#wechat_redirect)

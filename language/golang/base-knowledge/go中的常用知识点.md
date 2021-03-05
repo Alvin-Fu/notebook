@@ -48,6 +48,8 @@ func main(){
 会出现死锁的现象，因为传入的wg只是拷贝的副本， 使用指针传递就不会出现了，还可以不传人，由于go中支持闭包类型，因此在里面可以直接使用外面的变量
 
 #### 使用context实现并发控制
+
+
 [go context深入理解](https://juejin.im/post/5a6873fef265da3e317e55b6)
 
 ### 5、json标准库对nil slice和空slice的处理一致吗
