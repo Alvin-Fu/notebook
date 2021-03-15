@@ -25,6 +25,8 @@ M个内核线程执行N个goroutine，内核线程的创建都是很昂贵的，
 ```
 goroutine的状态转换图
 ![title](https://raw.githubusercontent.com/Alvin-Fu/notebook/master/images/2021/03/12/gpm-status-1615547108823.jpeg?token=AJEDOD2KT2L5W67IEL4VN6TAJLNK2)
+![title](../../../.local/static/2021/2/1/gpm-status.1615808469288.jpeg)
+
 
 
 
