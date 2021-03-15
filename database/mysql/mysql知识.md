@@ -2,7 +2,10 @@
 mysql作为数据层 与我们的日常应用连接非常密切，在此总结了一些使用知识  
 
 ## mysql执行的大致流程
-![enter description here](./images/mysql服务逻辑架构图.png)
+![title](https://raw.githubusercontent.com/Alvin-Fu/notebook/master/images/2021/03/15/mysqlzhixing-1615819946932.jpeg?token=AJEDODZY74FRJFFMXKJXHWLAJ4CHK)
+![title](../../.local/static/2021/2/1/mysqlzhixing.1615820012808.jpeg)
+
+![title](../../.local/static/pictures/database/mysql/mysql-framework.png)
 存储引擎架构分为三层，自上而下，分为第一层：连接层；第二层：服务层；第三层：引擎层。  
 
 ### 连接层：
