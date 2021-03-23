@@ -35,7 +35,8 @@ select IFNULL((select distinct salary from test orber by salary desc limit 1 OFF
 ```
 
 ## IFNULL
-IFNULL函数有两个参数SELECT IFNULL("hello", NULL),如果第一个参数的值为null的时候
+IFNULL函数有两个参数
+SELECT IFNULL("hello", NULL),如果第一个参数的值为null的时候就会输出第二个参数的值，
 
 
 
