@@ -39,7 +39,7 @@ IFNULL函数有两个参数
 SELECT IFNULL("hello", NULL),如果第一个参数的值为null的时候就会输出第二个参数的值，因此这个输出的hello
 SELECT IFNULL(NULL, "RUNOOB");这个中会输出RUNOOB
 
-ISNULL(expr)如果expr为null返回值为1，
+ISNULL(expr)如果expr为null返回值为1，否则为0
 
 
 
