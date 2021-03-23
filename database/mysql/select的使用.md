@@ -25,7 +25,7 @@ select distinct salary from test orber by salary desc limit 1,1
 ```
 
 ## as的作用
-
+as用于重命名列名或者表名
 
 
 
