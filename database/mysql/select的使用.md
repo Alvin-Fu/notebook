@@ -31,7 +31,7 @@ LeetCode上的题
 select(select distinct salary from test orber by salary desc limit 1,1) as SecondHighestSalary
 第二种
 解决NULL的还可以使用IFNULL函数
-select IFNULL(select distinct salary from test orber by salary desc limit 1,1) as SecondHighestSalary
+select IFNULL(select distinct salary from test orber by salary desc limit 1 OFFSET 1) as SecondHighestSalary
 ```
 
 ## IFNULL
