@@ -34,10 +34,12 @@ select(select distinct salary from test orber by salary desc limit 1,1) as Secon
 select IFNULL((select distinct salary from test orber by salary desc limit 1 OFFSET 1),NULL) as SecondHighestSalary
 ```
 
-## IFNULL
+## IFNULL， ISNULL
 IFNULL函数有两个参数
 SELECT IFNULL("hello", NULL),如果第一个参数的值为null的时候就会输出第二个参数的值，因此这个输出的hello
 SELECT IFNULL(NULL, "RUNOOB");这个中会输出RUNOOB
+
+
 
 
 
