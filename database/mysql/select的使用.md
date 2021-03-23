@@ -30,7 +30,7 @@ LeetCode上的题
 ```sql
 select(elect distinct salary from test orber by salary desc limit 1,1) as SecondHighestSalary
 第二种
-解决NULL的
+解决NULL的还可以使用
 ```
 
 
