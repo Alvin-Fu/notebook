@@ -24,7 +24,7 @@ distinct的作用用于去重只会输出一条
 select distinct salary from test orber by salary desc limit 1,1
 ```
 
-## asd的作用
+## as的作用
 
 
 
