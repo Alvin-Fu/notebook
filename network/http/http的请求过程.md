@@ -1,7 +1,7 @@
 # http的请求过程
 介绍一个http请求的响应全过程，从建立连接到数据发送在到连接断开的整个过程。
 ## 连接建立
-![title](https://raw.githubusercontent.com/Alvin-Fu/notebook/master/images/2021/03/09/http-1615303090641.png?token=AJEDOD73X7SHITS2XIP4LDDAI4QXQ)
+![title](../../images/2021/03/09/http-1615303090641.png)
 
 从图中可以看到一个http请求，先是经过三次握手，然后客户端向服务器发送请求命令
 
@@ -14,7 +14,8 @@
 5. 浏览器解析HTML
 
 ## http请求报文
-http请求报文由请求行(request line)、请求头部(header)、空行和请求数据4部分组成![title](https://raw.githubusercontent.com/Alvin-Fu/notebook/master/images/2021/03/10/http-head-1615308525906.png?token=AJEDOD45SA3JCS7GYGEBC4TAI43LM)
+http请求报文由请求行(request line)、请求头部(header)、空行和请求数据4部分组成
+![title](../../images/2021/03/10/http-head-1615308525906.png)
 
 ## http发展历程
 
