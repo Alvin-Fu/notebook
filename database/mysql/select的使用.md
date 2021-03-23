@@ -34,6 +34,8 @@ select(select distinct salary from test orber by salary desc limit 1,1) as Secon
 select ISFULL(select distinct salary from test orber by salary desc limit 1,1) as SecondHighestSalary
 ```
 
+## IF
+
 
 
 
