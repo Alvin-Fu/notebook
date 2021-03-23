@@ -35,7 +35,7 @@ select IFNULL((select distinct salary from test orber by salary desc limit 1 OFF
 ```
 
 ## IFNULL
-IFNULL
+IFNULL函数有两个参数IFNULL("hello", ")
 
 
 
