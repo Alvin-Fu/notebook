@@ -41,7 +41,7 @@ SELECT IFNULL(NULL, "RUNOOB");这个中会输出RUNOOB
 
 ISNULL(expr)如果expr为null返回值为1，否则为0
 
-## in和
+## in和not in
 
 
 
