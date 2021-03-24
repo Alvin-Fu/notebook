@@ -28,7 +28,7 @@ select distinct salary from test orber by salary desc limit 1,1
 as用于重命名列名或者表名
 LeetCode上的题
 ```sql
-select(select distinct salary from test orber by salary desc limit 1,1) as SecondHighestSalary
+select(select distinct salary from test order by salary desc limit 1,1) as SecondHighestSalary
 第二种
 解决NULL的还可以使用IFNULL函数
 select IFNULL((select distinct salary from test orber by salary desc limit 1 OFFSET 1),NULL) as SecondHighestSalary
