@@ -1,0 +1,7 @@
+.idea/
+go.work
+go.work.sum
+go.sum
+polaris
+log
+*.log
