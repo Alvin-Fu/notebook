@@ -1,0 +1,5 @@
+# 调试web页面
+使用F12，打印日志使用console.log('form---', form);
+Number()转int
+
+F12页面看console，右上角点开是js，点击行号进行断点（在sources页面），复制sources的内容可以在console下面执行
